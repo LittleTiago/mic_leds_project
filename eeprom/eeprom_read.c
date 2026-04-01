@@ -63,7 +63,7 @@ void print_leds(uint8_t n_leds) {
 int main(void) {
     uart_init();
     uart_str("Lendo EEPROM...\r\n");
-    eeprom_read_leds(0x01, 49);  // lê 5 structs a partir do endereço 0
-    print_leds(5);
+    eeprom_read_leds(0x01, MAX_LEDS);  // lê todos os structs a partir do endereço 0
+    print_leds(MAX_LEDS);
     while (1);
 }

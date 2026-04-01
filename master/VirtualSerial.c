@@ -73,10 +73,40 @@ USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface =
 			},
 	};
 
+USB_ClassInfo_CDC_Device_t Debug_CDC_Interface =
+	{
+		.Config =
+		{
+			.ControlInterfaceNumber   = INTERFACE_ID_CDC2_CCI,
+
+			.DataINEndpoint =
+			{
+				.Address          = CDC2_TX_EPADDR,
+				.Size             = CDC_TXRX_EPSIZE,
+				.Banks            = 1,
+			},
+
+			.DataOUTEndpoint =
+			{
+				.Address          = CDC2_RX_EPADDR,
+				.Size             = CDC_TXRX_EPSIZE,
+				.Banks            = 1,
+			},
+
+			.NotificationEndpoint =
+			{
+				.Address          = CDC2_NOTIFICATION_EPADDR,
+				.Size             = CDC_NOTIFICATION_EPSIZE,
+				.Banks            = 1,
+			},
+		},
+	};
+
 /** Standard file stream for the CDC interface when set up, so that the virtual CDC COM port can be
  *  used like any regular character stream in the C APIs.
  */
 static FILE USBSerialStream;
+static FILE USBSerialDebug;
 
 volatile rx_state_t state = WAIT_ADDR;
 volatile uint8_t buf[MAX_LEN_INIT_WL];
@@ -108,6 +138,7 @@ void USB_SendHost(uint8_t *buffer, uint16_t len);
 void fill_init_wl_response(uint8_t *response, uint8_t id, uint8_t seq, wl_devices_struct* wavelengths);
 void mount_request_slave(uint8_t *buf, uint8_t id, uint8_t seq, uint8_t cmd, uint16_t payload);
 uint16_t extract_wl_from_buffer(uint8_t *buffer);
+int8_t index_wavelength(wl *w, uint16_t wavelength);
 
 wl_devices_struct wl_list[max_wavelength];
 wl wl_master[MAX_LEDS];
@@ -215,9 +246,13 @@ void main(void){
 
 	SetupHardware();
 
-	/* Create a regular character stream for the interface so that it can be used with the stdio.h functions */
+	// Cria um stream de caracteres e redireciona para stdout
 	CDC_Device_CreateStream(&VirtualSerial_CDC_Interface, &USBSerialStream);
 	stdout = &USBSerialStream;
+
+	// Cria um stream de caracteres e redireciona para stderr
+	CDC_Device_CreateStream(&Debug_CDC_Interface, &USBSerialDebug);
+	stderr = &USBSerialDebug;
 
 	LEDs_SetAllLEDs(LEDMASK_USB_NOTREADY);
 
@@ -251,7 +286,6 @@ void main(void){
 	// Itera sobre todos os slaves, ignorando os que não respondem
 	while(devices_initiated < MAX_DEVICES){
 		if(com_state == SEND_CMD){
-			// printf("Enviando pacote para o slave %d\n", devices_initiated);
 			mount_request_slave(request_slave_buffer, devices_initiated, seq, INIT_WL_CMD, 0); //Preenchendo o buffer
 			seq++;
 
@@ -319,8 +353,15 @@ void main(void){
 		ret = USB_ReadHost(usb_in_buffer);
 
 		if(ret != 0){
+
+			fprintf(stderr, "[DEBUG] Buffer recebido do host\n");
+			log_buffer(usb_in_buffer, ret);
+			fprintf(stderr, "\n");
+
 			usb_packet_parsing_state = WAIT_ADDR;
 			usb_packet_state = USB_packet_parser(usb_in_buffer, ret, id, usb_packet_parsing_state);
+
+			fprintf(stderr, "[DEBUG] Validade do buffer recebido: %d\n", usb_packet_state);
 		}
 
 		if(usb_packet_state == VALID){
@@ -328,20 +369,17 @@ void main(void){
 			switch(cmd){
 				case INIT_WL_CMD:
 				{
-					print_wavelength_matrix(wl_list);
+					log_wavelength_matrix(wl_list);
 					USB_SendHost(wl_init_host_response, wl_init_host_response[LEN_OFFSET] + 4);
 					break;
 				}
 
 				case ON_WL_CMD:
 				{
-					printf("Bytes from buffer: %02X %02X\n", usb_in_buffer[PAYLOAD_OFFSET], usb_in_buffer[PAYLOAD_OFFSET + 1]);
 					extracted_wl = extract_wl_from_buffer(usb_in_buffer);
-
 					has_wl = search_wavelenth(wl_list, extracted_wl);
 
-					printf("Comprimento de onda extraído: %d\n", extracted_wl);
-					printf("Pesquisa pelo comprimento de onda: %d\n", has_wl);
+					fprintf(stderr, "[DEBUG] Comprimento de onda extraído e index: %d, %d\n", extracted_wl, has_wl);
 
 					// Verifica se aquele comprimento de onda existe no conjunto
 					if(has_wl >= 0){
@@ -349,17 +387,16 @@ void main(void){
 						// Captura a quantidade de devices daquele comprimento de onda
 						uint8_t num_devices = get_num_slaves_by_wavelength(wl_list, has_wl);
 
-						printf("num_devices: %d\n", num_devices);
-
 						// Captura todos os devices daquele comprimento de onda
 						selected_slaves = wl_list[has_wl].slaves;
 
 						uint8_t i = 0, sucess_counter = 0;
+						retry_counter = -1;
 						while(i < MAX_DEVICES){
 							// Acende o led correspondente no master
 							if(*(selected_slaves + i) == 0){
-								set_led_state(leds, (uint8_t)has_wl, 1);
-								printf("Acendeu no master\n");
+								int8_t wl_on_master = index_wavelength(wl_master, extracted_wl);
+								set_led_state(leds, (uint8_t)wl_on_master, 1);
 								sucess_counter++;
 								i++;
 							}
@@ -368,13 +405,16 @@ void main(void){
 								mount_request_slave(request_slave_buffer, 
 								*(selected_slaves + i), seq, ON_WL_CMD, extracted_wl);
 								seq++;
+
+								fprintf(stderr, "[DEBUG] Pacote montado para o slave\n");
+								log_buffer(request_slave_buffer, MAX_LEN_REQUEST);
+								fprintf(stderr, "\n");
 								
 								// Seta flags
 								state = WAIT_CONFIRMATION;
 								is_ack = 0;
 								is_nack = 0;
 								flag_4s = 0;
-								retry_counter = -1;
 
 								// Envia a requisição
 								configure_modbus_transmitter_mode();
@@ -392,46 +432,53 @@ void main(void){
 										disable_timer1();
 										sucess_counter++;
 										i++;
+										retry_counter = -1;
 										break;
 									}
 									else if(is_nack == 1){
 										disable_timer1();
 										i++;
+										retry_counter = -1;
 										break;
 									}
 								}
 								
 								// Aplicar retry
 								if(flag_4s){
+									fprintf(stderr, "Entrou no retry: %d", retry_counter);
 									flag_4s = 0;
 									disable_timer1();
-									if(retry_counter >= MAX_RETRY)	i++; // Pula o slave defeituoso
+									if(retry_counter >= MAX_RETRY){
+										fprintf(stderr, "[DEBUG] Device não respondeu após %d tentativas - ignorando\n", MAX_RETRY);
+										retry_counter = -1;
+										i++; // Pula o slave defeituoso
+									}
 								}
 							}
 							else i++;
 						}
-	
+
 						// Reportar que os devices responderam ok
 						if(sucess_counter > 0 && sucess_counter == num_devices){
 							USB_SendHost_byte(ACK);
-							printf("Sucesso em todos os devices");
+							fprintf(stderr, "[DEBUG] Sucesso em todos os devices\n");
 						}
 						
 						// Erro de comunicação em algum device, mas havia redundância
 						else if(sucess_counter > 0 && sucess_counter < num_devices){
 							USB_SendHost_byte(ACK);
-							printf("Erro de comunicação/acendimento em algum device\n");
+							fprintf(stderr, "[DEBUG] Erro de comunicação/acendimento em algum device\n");
 						}
 						
 						// Erro de comunicação em todos os devices
 						else if(sucess_counter == 0){
 							USB_SendHost_byte(NACK);
-							printf("Nenhum device respondeu corretamente");
+							fprintf(stderr, "[DEBUG] Nenhum device respondeu corretamente\n");
 						}
 					}
 					else{ // Reporta que não há o comprimento de onda solicitado
 						USB_SendHost_byte(NACK);
-						printf("Comprimento de onda ausente\n");
+						fprintf(stderr, "[DEBUG] Comprimento de onda ausente\n");
 					}
 
 					break;
@@ -439,13 +486,10 @@ void main(void){
 
 				case OFF_WL_CMD:
 				{
-					printf("Bytes from buffer: %02X %02X\n", usb_in_buffer[PAYLOAD_OFFSET], usb_in_buffer[PAYLOAD_OFFSET + 1]);
 					extracted_wl = extract_wl_from_buffer(usb_in_buffer);
-
 					has_wl = search_wavelenth(wl_list, extracted_wl);
 
-					printf("Comprimento de onda extraído: %d\n", extracted_wl);
-					printf("Pesquisa pelo comprimento de onda: %d\n", has_wl);
+					fprintf(stderr, "[DEBUG] Comprimento de onda extraído e index: %d, %d\n", extracted_wl, has_wl);
 
 					// Verifica se aquele comprimento de onda existe no conjunto
 					if(has_wl >= 0){	
@@ -457,12 +501,13 @@ void main(void){
 						selected_slaves = wl_list[has_wl].slaves;
 						
 						uint8_t i = 0, sucess_counter = 0;
+						retry_counter = -1;
 						while(i < MAX_DEVICES){
 
 							// Apaga o led correspondente no master
 							if(*(selected_slaves + i) == 0){
-								set_led_state(leds, (uint8_t)has_wl, 0);
-								printf("Apagou no master\n");
+								int8_t wl_on_master = index_wavelength(wl_master, extracted_wl);
+								set_led_state(leds, (uint8_t)wl_on_master, 0);
 								sucess_counter++;
 								i++;
 							}
@@ -473,16 +518,15 @@ void main(void){
 								*(selected_slaves + i), seq, OFF_WL_CMD, extracted_wl);
 								seq++;
 								
-								printf("Buffer Montado: ");
-								for(uint8_t j = 0; j < MAX_LEN_REQUEST; j++) printf("%02X", request_slave_buffer[j]);
-								printf("\n");
+								fprintf(stderr, "[DEBUG] Pacote montado para o slave\n");
+								log_buffer(request_slave_buffer, MAX_LEN_REQUEST);
+								fprintf(stderr, "\n");
 
 								// Seta flags
 								state = WAIT_CONFIRMATION;
 								is_ack = 0;
 								is_nack = 0;
 								flag_4s = 0;
-								retry_counter = -1;
 
 								// Envia a requisição
 								configure_modbus_transmitter_mode();
@@ -500,20 +544,26 @@ void main(void){
 										disable_timer1();
 										sucess_counter++;
 										i++;
+										retry_counter = -1;
 										break;
 									}
 									else if(is_nack == 1){
 										disable_timer1();
 										i++;
+										retry_counter = -1;
 										break;
 									}
 								}
-								
+
 								// Aplicar retry
 								if(flag_4s){
 									flag_4s = 0;
 									disable_timer1();
-									if(retry_counter >= MAX_RETRY)	i++; // Pula o slave defeituoso
+									if(retry_counter >= MAX_RETRY){
+										fprintf(stderr, "[DEBUG] Device não respondeu após %d tentativas - ignorando\n", MAX_RETRY);
+										retry_counter = -1;
+										i++; // Pula o slave defeituoso
+									}
 								}
 							}
 							
@@ -523,24 +573,24 @@ void main(void){
 						// Reportar que os devices responderam ok
 						if(sucess_counter > 0 && sucess_counter == num_devices){
 							USB_SendHost_byte(ACK);
-							printf("Sucesso em todos os devices");
+							fprintf(stderr, "[DEBUG] Sucesso em todos os devices\n");
 						}
 						
 						// Erro de comunicação em algum device, mas havia redundância
 						else if(sucess_counter > 0 && sucess_counter < num_devices){
 							USB_SendHost_byte(ACK);
-							printf("Erro de comunicação/acendimento em algum device\n");
+							fprintf(stderr, "[DEBUG] Erro de comunicação/acendimento em algum device\n");
 						}
 						
 						// Erro de comunicação em todos os devices
 						else if(sucess_counter == 0){
 							USB_SendHost_byte(NACK);
-							printf("Nenhum device respondeu corretamente");
+							fprintf(stderr, "[DEBUG] Nenhum device respondeu corretamente\n");
 						}
 					}
 					else{ // Reportar que não há o comprimento de onda solicitado
 						USB_SendHost_byte(NACK);
-						printf("Comprimento de onda ausente\n");
+						fprintf(stderr, "[DEBUG] Comprimento de onda ausente\n");
 					}
 
 					break;
@@ -548,12 +598,14 @@ void main(void){
 				
 				case ALL_OFF_CMD:
 				{
+					fprintf(stderr, "[DEBUG] Comando para apagar todos os leds dos devices\n");
+
 					uint8_t i = 0, sucess_counter = 0;
+					retry_counter = -1;
 					while(i < MAX_DEVICES){
 						// Apaga todos os leds do master
 						if(i == 0){
 							set_leds_all_off(leds);
-							printf("Apagou todos no master\n");
 							sucess_counter++;
 							i++;
 						}
@@ -563,16 +615,15 @@ void main(void){
 							mount_request_slave(request_slave_buffer, i, seq, ALL_OFF_CMD, 0);
 							seq++;
 							
-							printf("Buffer Montado: ");
-							for(uint8_t j = 0; j < 6; j++) printf("%02X", request_slave_buffer[j]);
-							printf("\n");
+							fprintf(stderr, "[DEBUG] Pacote montado para o slave\n");
+							log_buffer(request_slave_buffer, 6);
+							fprintf(stderr, "\n");
 
 							// Seta flags
 							state = WAIT_CONFIRMATION;
 							is_ack = 0;
 							is_nack = 0;
 							flag_4s = 0;
-							retry_counter = -1;
 
 							// Envia a requisição
 							configure_modbus_transmitter_mode();
@@ -590,11 +641,13 @@ void main(void){
 									disable_timer1();
 									sucess_counter++;
 									i++;
+									retry_counter = -1;
 									break;
 								}
 								else if(is_nack == 1){
 									disable_timer1();
 									i++;
+									retry_counter = -1;
 									break;
 								}
 							}
@@ -603,7 +656,11 @@ void main(void){
 							if(flag_4s){
 								flag_4s = 0;
 								disable_timer1();
-								if(retry_counter >= MAX_RETRY)	i++; // Pula o slave defeituoso
+								if(retry_counter >= MAX_RETRY){
+										fprintf(stderr, "[DEBUG] Device não respondeu após %d tentativas - ignorando\n", MAX_RETRY);
+										retry_counter = -1;
+										i++; // Pula o slave defeituoso
+								}
 							}
 						}
 					}
@@ -611,19 +668,19 @@ void main(void){
 					// Reportar que os devices responderam ok
 					if(sucess_counter > 0 && sucess_counter == MAX_DEVICES){
 						USB_SendHost_byte(ACK);
-						printf("Sucesso em todos os devices - ALL OF");
+						fprintf(stderr, "[DEBUG] Sucesso em todos os devices\n");
 					}
 					
 					// Erro de comunicação em algum device, mas havia redundância
 					else if(sucess_counter > 0 && sucess_counter < MAX_DEVICES){
 						USB_SendHost_byte(ACK);
-						printf("Erro de comunicação/acendimento em algum device - ALL OF\n");
+						fprintf(stderr, "[DEBUG] Erro de comunicação/acendimento em algum device\n");
 					}
 					
 					// Erro de comunicação em todos os devices
 					else if(sucess_counter == 0){
 						USB_SendHost_byte(NACK);
-						printf("Nenhum device respondeu corretamente - ALL OF");
+						fprintf(stderr, "[DEBUG] Nenhum device respondeu corretamente\n");
 					}
 
 					break;
@@ -632,6 +689,7 @@ void main(void){
 		}
 		
 		CDC_Device_USBTask(&VirtualSerial_CDC_Interface);
+		CDC_Device_USBTask(&Debug_CDC_Interface);
 		USB_USBTask();
 	}
 }
@@ -704,19 +762,19 @@ void EVENT_USB_Device_Disconnect(void)
 }
 
 /** Event handler for the library USB Configuration Changed event. */
-void EVENT_USB_Device_ConfigurationChanged(void)
-{
+void EVENT_USB_Device_ConfigurationChanged(void){
 	bool ConfigSuccess = true;
 
 	ConfigSuccess &= CDC_Device_ConfigureEndpoints(&VirtualSerial_CDC_Interface);
+	ConfigSuccess &= CDC_Device_ConfigureEndpoints(&Debug_CDC_Interface);
 
 	LEDs_SetAllLEDs(ConfigSuccess ? LEDMASK_USB_READY : LEDMASK_USB_ERROR);
 }
 
 /** Event handler for the library USB Control Request reception event. */
-void EVENT_USB_Device_ControlRequest(void)
-{
+void EVENT_USB_Device_ControlRequest(void){
 	CDC_Device_ProcessControlRequest(&VirtualSerial_CDC_Interface);
+	CDC_Device_ProcessControlRequest(&Debug_CDC_Interface);
 }
 
 /** CDC class driver callback function the processing of changes to the virtual
@@ -724,8 +782,7 @@ void EVENT_USB_Device_ControlRequest(void)
  *
  *  \param[in] CDCInterfaceInfo  Pointer to the CDC class interface configuration structure being referenced
  */
-void EVENT_CDC_Device_ControLineStateChanged(USB_ClassInfo_CDC_Device_t *const CDCInterfaceInfo)
-{
+void EVENT_CDC_Device_ControLineStateChanged(USB_ClassInfo_CDC_Device_t *const CDCInterfaceInfo){
 	/* You can get changes to the virtual CDC lines in this callback; a common
 	   use-case is to use the Data Terminal Ready (DTR) flag to enable and
 	   disable CDC communications in your application when set to avoid the
@@ -869,9 +926,11 @@ void handler_slave_response(wl_devices_struct *v, uint8_t id_slave, uint8_t *buf
 		// Converte os pares de valores de buffer em uint16
 		wavelength = ((uint16_t)buffer[i] << 8) | buffer[i+1];
 
-		printf("Buffer: %u %u ", buffer[i], buffer[i + 1]);
+		fprintf(stderr, "Buffer: %u %u \n", buffer[i], buffer[i + 1]);
+		fprintf(stderr, "Wavelength: %d\n", wavelength);
 
-		printf("Wavelength: %d\n", wavelength);
+		//Descobrir a próxima posição para fazer o append
+
 
 		ret = fill_field_wavelength_matriz(v, wavelength, id_slave, next_append);
 		
@@ -888,25 +947,41 @@ void handler_master_wl(wl_devices_struct *v, wl *w){
 	for(uint8_t i = 0; i < MAX_LEDS; i++){
 		if(w[i].wl != 0xFFFF){
 			ret = fill_field_wavelength_matriz(v, w[i].wl, 0, next_append);
-			if(ret == -1){		// Comprimento de onda não presente
-				next_append++; 	// Incrementa a posição de inserção do próximo comprimento de onda
+			if(ret == -1){	// Comprimento de onda não presente no
+				next_append++;
 			} 
 		}
 	}
 }
 
-void print_wavelength_matrix(wl_devices_struct *v){
+int8_t index_wavelength(wl *w, uint16_t wavelength){
+
+	int8_t ret = -1;
+
+	for(int8_t i = 0; i < MAX_LEDS; i++){
+		if(w[i].wl == wavelength){
+			ret = i;
+			break;
+		}
+	}
+
+	return(ret);
+}
+
+void log_wavelength_matrix(wl_devices_struct *v){
+
+	fprintf(stderr, "[DEBUG] Relação de comprimentos de onda do equipamento\n");
 
     for (uint16_t i = 0; i < max_wavelength; i++) {
-
-        printf("Index %u | WL: %u | Slaves: ", i, v[i].wl);
-
-        for (uint8_t j = 0; j < MAX_DEVICES; j++) {
-            printf("%u ", v[i].slaves[j]);
-        }
-
-        printf("\n");
+        fprintf(stderr, "Index %u | WL: %u | Devices: ", i, v[i].wl);
+        for (uint8_t j = 0; j < MAX_DEVICES; j++)	fprintf(stderr, "%u ", v[i].slaves[j]);
+        fprintf(stderr, "\n");
     }
+}
+
+void log_buffer(uint8_t *buf, uint8_t len){
+
+	for (uint8_t i = 0; i < len; i++)	fprintf(stderr, "%02X ", buf[i]);
 }
 
 uint16_t extract_wl_from_buffer(uint8_t *buffer){
