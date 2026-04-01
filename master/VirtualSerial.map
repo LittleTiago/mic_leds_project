@@ -1,0 +1,2017 @@
+Membro de arquivo incluído para satisfazer referência por arquivo (símbolo)
+
+/usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o (exit)
+/usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+                              obj/VirtualSerial.o (__do_copy_data)
+/usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+                              obj/VirtualSerial.o (__do_clear_bss)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                              obj/RNDISClassDevice.o (memcpy_P)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strlen_P.o)
+                              obj/CDCClassDevice.o (__strlen_P)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                              obj/HIDClassDevice.o (memcmp)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+                              obj/HIDClassDevice.o (memcpy)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memset.o)
+                              obj/HIDClassDevice.o (memset)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                              obj/VirtualSerial.o (fputc)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+                              obj/VirtualSerial.o (__iob)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+                              obj/VirtualSerial.o (printf)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+                              obj/VirtualSerial.o (putchar)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+                              obj/VirtualSerial.o (puts)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o) (vfprintf)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__ultoa_invert)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+                              obj/disk.o (eeprom_read_block)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+                              obj/disk.o (eeprom_read_byte)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+                              obj/EndpointStream_AVR8.o (eeprom_update_byte)
+/usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o) (__epilogue_restores__)
+
+Alocação de símbolos comuns
+Símbolo comum       tamanho           arquivo
+
+requested_slave     0x1               obj/VirtualSerial.o
+wl_list             0x6c              obj/VirtualSerial.o
+USB_IsInitialized   0x1               obj/USBTask.o
+requested_cmd       0x1               obj/VirtualSerial.o
+wl_init_host_response
+                    0x4c              obj/VirtualSerial.o
+requested_len_max   0x1               obj/VirtualSerial.o
+usb_in_buffer       0x6               obj/VirtualSerial.o
+USB_DeviceState     0x1               obj/USBTask.o
+USB_Device_ConfigurationNumber
+                    0x1               obj/DeviceStandardReq.o
+wl_master           0x48              obj/VirtualSerial.o
+USB_Device_CurrentlySelfPowered
+                    0x1               obj/DeviceStandardReq.o
+USB_ControlRequest  0x8               obj/USBTask.o
+buf                 0x68              obj/VirtualSerial.o
+USB_Device_RemoteWakeupEnabled
+                    0x1               obj/DeviceStandardReq.o
+__iob               0x6               /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+
+Seções de entrada descartadas
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ .text          0x0000000000000000        0x0 obj/VirtualSerial.o
+ .text.hex2int  0x0000000000000000        0x4 obj/VirtualSerial.o
+ .text.handler_slave_response
+                0x0000000000000000       0xb8 obj/VirtualSerial.o
+ .text.extract_wl_from_buffer
+                0x0000000000000000        0xe obj/VirtualSerial.o
+ .text          0x0000000000000000        0x0 obj/Descriptors.o
+ .data          0x0000000000000000        0x0 obj/Descriptors.o
+ .bss           0x0000000000000000        0x0 obj/Descriptors.o
+ .text          0x0000000000000000        0x0 obj/serial.o
+ .data          0x0000000000000000        0x0 obj/serial.o
+ .bss           0x0000000000000000        0x0 obj/serial.o
+ .text.usart_send_uint16
+                0x0000000000000000       0x12 obj/serial.o
+ .rodata        0x0000000000000000        0x2 obj/serial.o
+ .text          0x0000000000000000        0x0 obj/constants.o
+ .data          0x0000000000000000        0x0 obj/constants.o
+ .bss           0x0000000000000000        0x0 obj/constants.o
+ .text          0x0000000000000000        0x0 obj/wl.o
+ .data          0x0000000000000000        0x0 obj/wl.o
+ .bss           0x0000000000000000        0x0 obj/wl.o
+ .text          0x0000000000000000        0x0 obj/disk.o
+ .data          0x0000000000000000        0x0 obj/disk.o
+ .bss           0x0000000000000000        0x0 obj/disk.o
+ .text          0x0000000000000000        0x0 obj/leds.o
+ .data          0x0000000000000000        0x0 obj/leds.o
+ .bss           0x0000000000000000        0x0 obj/leds.o
+ .text          0x0000000000000000        0x0 obj/HIDParser.o
+ .data          0x0000000000000000        0x0 obj/HIDParser.o
+ .bss           0x0000000000000000        0x0 obj/HIDParser.o
+ .text.USB_ProcessHIDReport
+                0x0000000000000000      0x6e0 obj/HIDParser.o
+ .text.USB_GetHIDReportItemInfo
+                0x0000000000000000       0xbc obj/HIDParser.o
+ .text.USB_SetHIDReportItemInfo
+                0x0000000000000000       0xb2 obj/HIDParser.o
+ .text.USB_GetHIDReportSize
+                0x0000000000000000       0x56 obj/HIDParser.o
+ .debug_info    0x0000000000000000      0x728 obj/HIDParser.o
+ .debug_abbrev  0x0000000000000000      0x220 obj/HIDParser.o
+ .debug_loc     0x0000000000000000      0xb56 obj/HIDParser.o
+ .debug_aranges
+                0x0000000000000000       0x38 obj/HIDParser.o
+ .debug_ranges  0x0000000000000000      0x110 obj/HIDParser.o
+ .debug_line    0x0000000000000000      0x57c obj/HIDParser.o
+ .debug_str     0x0000000000000000      0x6da obj/HIDParser.o
+ .comment       0x0000000000000000       0x12 obj/HIDParser.o
+ .debug_frame   0x0000000000000000      0x114 obj/HIDParser.o
+ .text          0x0000000000000000        0x0 obj/Device_AVR8.o
+ .data          0x0000000000000000        0x0 obj/Device_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/Device_AVR8.o
+ .text.USB_Device_SendRemoteWakeup
+                0x0000000000000000       0x2c obj/Device_AVR8.o
+ .debug_info    0x0000000000000000      0x18c obj/Device_AVR8.o
+ .debug_abbrev  0x0000000000000000       0xb6 obj/Device_AVR8.o
+ .debug_aranges
+                0x0000000000000000       0x20 obj/Device_AVR8.o
+ .debug_ranges  0x0000000000000000       0x10 obj/Device_AVR8.o
+ .debug_line    0x0000000000000000      0x164 obj/Device_AVR8.o
+ .debug_str     0x0000000000000000      0x2f4 obj/Device_AVR8.o
+ .comment       0x0000000000000000       0x12 obj/Device_AVR8.o
+ .debug_frame   0x0000000000000000       0x24 obj/Device_AVR8.o
+ .text          0x0000000000000000        0x0 obj/EndpointStream_AVR8.o
+ .data          0x0000000000000000        0x0 obj/EndpointStream_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Discard_Stream
+                0x0000000000000000       0x78 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Null_Stream
+                0x0000000000000000       0x78 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Stream_LE
+                0x0000000000000000       0x9e obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Stream_BE
+                0x0000000000000000       0xa8 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_LE
+                0x0000000000000000       0x9e obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_BE
+                0x0000000000000000       0xa8 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_LE
+                0x0000000000000000       0xa0 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_BE
+                0x0000000000000000       0xaa obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_LE
+                0x0000000000000000       0xa2 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_BE
+                0x0000000000000000       0xac obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_LE
+                0x0000000000000000       0xa2 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_BE
+                0x0000000000000000       0xac obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_Stream_BE
+                0x0000000000000000       0xcc obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_LE
+                0x0000000000000000       0x76 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_BE
+                0x0000000000000000       0x84 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_PStream_BE
+                0x0000000000000000       0xc8 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_LE
+                0x0000000000000000       0xe6 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_BE
+                0x0000000000000000       0xf4 obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_LE
+                0x0000000000000000       0x8c obj/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_BE
+                0x0000000000000000       0x94 obj/EndpointStream_AVR8.o
+ .text          0x0000000000000000        0x0 obj/Endpoint_AVR8.o
+ .data          0x0000000000000000        0x0 obj/Endpoint_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/Endpoint_AVR8.o
+ .text.Endpoint_ClearEndpoints
+                0x0000000000000000       0x28 obj/Endpoint_AVR8.o
+ .text          0x0000000000000000        0x0 obj/Host_AVR8.o
+ .data          0x0000000000000000        0x0 obj/Host_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/Host_AVR8.o
+ .debug_info    0x0000000000000000       0x56 obj/Host_AVR8.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/Host_AVR8.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/Host_AVR8.o
+ .debug_line    0x0000000000000000       0x1a obj/Host_AVR8.o
+ .debug_str     0x0000000000000000      0x1be obj/Host_AVR8.o
+ .comment       0x0000000000000000       0x12 obj/Host_AVR8.o
+ .text          0x0000000000000000        0x0 obj/PipeStream_AVR8.o
+ .data          0x0000000000000000        0x0 obj/PipeStream_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/PipeStream_AVR8.o
+ .debug_info    0x0000000000000000       0x56 obj/PipeStream_AVR8.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/PipeStream_AVR8.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/PipeStream_AVR8.o
+ .debug_line    0x0000000000000000       0x1a obj/PipeStream_AVR8.o
+ .debug_str     0x0000000000000000      0x1c4 obj/PipeStream_AVR8.o
+ .comment       0x0000000000000000       0x12 obj/PipeStream_AVR8.o
+ .text          0x0000000000000000        0x0 obj/Pipe_AVR8.o
+ .data          0x0000000000000000        0x0 obj/Pipe_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/Pipe_AVR8.o
+ .debug_info    0x0000000000000000       0x56 obj/Pipe_AVR8.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/Pipe_AVR8.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/Pipe_AVR8.o
+ .debug_line    0x0000000000000000       0x1a obj/Pipe_AVR8.o
+ .debug_str     0x0000000000000000      0x1be obj/Pipe_AVR8.o
+ .comment       0x0000000000000000       0x12 obj/Pipe_AVR8.o
+ .text          0x0000000000000000        0x0 obj/USBController_AVR8.o
+ .data          0x0000000000000000        0x0 obj/USBController_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/USBController_AVR8.o
+ .text.USB_Disable
+                0x0000000000000000       0x34 obj/USBController_AVR8.o
+ .text          0x0000000000000000        0x0 obj/USBInterrupt_AVR8.o
+ .data          0x0000000000000000        0x0 obj/USBInterrupt_AVR8.o
+ .bss           0x0000000000000000        0x0 obj/USBInterrupt_AVR8.o
+ .text          0x0000000000000000        0x0 obj/ConfigDescriptors.o
+ .data          0x0000000000000000        0x0 obj/ConfigDescriptors.o
+ .bss           0x0000000000000000        0x0 obj/ConfigDescriptors.o
+ .text.USB_GetNextDescriptor
+                0x0000000000000000       0x3c obj/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfType
+                0x0000000000000000       0x38 obj/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeBefore
+                0x0000000000000000       0x46 obj/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeAfter
+                0x0000000000000000       0x3e obj/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorComp
+                0x0000000000000000       0x66 obj/ConfigDescriptors.o
+ .debug_info    0x0000000000000000      0x492 obj/ConfigDescriptors.o
+ .debug_abbrev  0x0000000000000000      0x1b9 obj/ConfigDescriptors.o
+ .debug_loc     0x0000000000000000      0x59f obj/ConfigDescriptors.o
+ .debug_aranges
+                0x0000000000000000       0x40 obj/ConfigDescriptors.o
+ .debug_ranges  0x0000000000000000       0x30 obj/ConfigDescriptors.o
+ .debug_line    0x0000000000000000      0x20d obj/ConfigDescriptors.o
+ .debug_str     0x0000000000000000      0x4f6 obj/ConfigDescriptors.o
+ .comment       0x0000000000000000       0x12 obj/ConfigDescriptors.o
+ .debug_frame   0x0000000000000000       0xfc obj/ConfigDescriptors.o
+ .text          0x0000000000000000        0x0 obj/DeviceStandardReq.o
+ .data          0x0000000000000000        0x0 obj/DeviceStandardReq.o
+ .bss           0x0000000000000000        0x0 obj/DeviceStandardReq.o
+ .text          0x0000000000000000        0x0 obj/Events.o
+ .data          0x0000000000000000        0x0 obj/Events.o
+ .bss           0x0000000000000000        0x0 obj/Events.o
+ .text.USB_Event_Stub_2
+                0x0000000000000000        0x2 obj/Events.o
+ .text.USB_Event_Stub_3
+                0x0000000000000000        0x2 obj/Events.o
+ .text          0x0000000000000000        0x0 obj/HostStandardReq.o
+ .data          0x0000000000000000        0x0 obj/HostStandardReq.o
+ .bss           0x0000000000000000        0x0 obj/HostStandardReq.o
+ .debug_info    0x0000000000000000       0x56 obj/HostStandardReq.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/HostStandardReq.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/HostStandardReq.o
+ .debug_line    0x0000000000000000       0x1a obj/HostStandardReq.o
+ .debug_str     0x0000000000000000      0x1bf obj/HostStandardReq.o
+ .comment       0x0000000000000000       0x12 obj/HostStandardReq.o
+ .text          0x0000000000000000        0x0 obj/USBTask.o
+ .data          0x0000000000000000        0x0 obj/USBTask.o
+ .bss           0x0000000000000000        0x0 obj/USBTask.o
+ .text          0x0000000000000000        0x0 obj/AudioClassDevice.o
+ .data          0x0000000000000000        0x0 obj/AudioClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/AudioClassDevice.o
+ .text.Audio_Device_ConfigureEndpoints
+                0x0000000000000000       0x32 obj/AudioClassDevice.o
+ .text.Audio_Device_Event_Stub
+                0x0000000000000000        0x2 obj/AudioClassDevice.o
+ .text.Audio_Device_ProcessControlRequest
+                0x0000000000000000      0x2e0 obj/AudioClassDevice.o
+ .debug_info    0x0000000000000000      0x902 obj/AudioClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x262 obj/AudioClassDevice.o
+ .debug_loc     0x0000000000000000      0x311 obj/AudioClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x30 obj/AudioClassDevice.o
+ .debug_ranges  0x0000000000000000       0x58 obj/AudioClassDevice.o
+ .debug_line    0x0000000000000000      0x449 obj/AudioClassDevice.o
+ .debug_str     0x0000000000000000      0x783 obj/AudioClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/AudioClassDevice.o
+ .debug_frame   0x0000000000000000       0xa8 obj/AudioClassDevice.o
+ .text          0x0000000000000000        0x0 obj/CCIDClassDevice.o
+ .data          0x0000000000000000        0x0 obj/CCIDClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/CCIDClassDevice.o
+ .text.CCID_CheckStatusNoError
+                0x0000000000000000        0xc obj/CCIDClassDevice.o
+ .text.CCID_Device_ProcessControlRequest
+                0x0000000000000000       0x70 obj/CCIDClassDevice.o
+ .text.CCID_Device_ConfigureEndpoints
+                0x0000000000000000       0x30 obj/CCIDClassDevice.o
+ .text.CCID_Device_USBTask
+                0x0000000000000000      0x3d6 obj/CCIDClassDevice.o
+ .debug_info    0x0000000000000000      0xe6d obj/CCIDClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x380 obj/CCIDClassDevice.o
+ .debug_loc     0x0000000000000000      0x67c obj/CCIDClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x38 obj/CCIDClassDevice.o
+ .debug_ranges  0x0000000000000000       0xc8 obj/CCIDClassDevice.o
+ .debug_line    0x0000000000000000      0x5e2 obj/CCIDClassDevice.o
+ .debug_str     0x0000000000000000      0xaaa obj/CCIDClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/CCIDClassDevice.o
+ .debug_frame   0x0000000000000000       0xbc obj/CCIDClassDevice.o
+ .text          0x0000000000000000        0x0 obj/CDCClassDevice.o
+ .data          0x0000000000000000        0x0 obj/CDCClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/CDCClassDevice.o
+ .text.CDC_Device_SendString
+                0x0000000000000000       0x42 obj/CDCClassDevice.o
+ .text.CDC_Device_SendData
+                0x0000000000000000       0x34 obj/CDCClassDevice.o
+ .text.CDC_Device_SendString_P
+                0x0000000000000000       0x52 obj/CDCClassDevice.o
+ .text.CDC_Device_SendData_P
+                0x0000000000000000       0x34 obj/CDCClassDevice.o
+ .text.CDC_Device_getchar_Blocking
+                0x0000000000000000       0x34 obj/CDCClassDevice.o
+ .rodata        0x0000000000000000        0x8 obj/CDCClassDevice.o
+ .text.CDC_Device_SendControlLineStateChange
+                0x0000000000000000       0x8e obj/CDCClassDevice.o
+ .text.CDC_Device_CreateBlockingStream
+                0x0000000000000000       0x26 obj/CDCClassDevice.o
+ .text          0x0000000000000000        0x0 obj/HIDClassDevice.o
+ .data          0x0000000000000000        0x0 obj/HIDClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/HIDClassDevice.o
+ .text.HID_Device_ProcessControlRequest
+                0x0000000000000000      0x274 obj/HIDClassDevice.o
+ .text.HID_Device_ConfigureEndpoints
+                0x0000000000000000       0x28 obj/HIDClassDevice.o
+ .text.HID_Device_USBTask
+                0x0000000000000000      0x17a obj/HIDClassDevice.o
+ .debug_info    0x0000000000000000      0x9f5 obj/HIDClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x28e obj/HIDClassDevice.o
+ .debug_loc     0x0000000000000000      0x3ea obj/HIDClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x30 obj/HIDClassDevice.o
+ .debug_ranges  0x0000000000000000       0x38 obj/HIDClassDevice.o
+ .debug_line    0x0000000000000000      0x530 obj/HIDClassDevice.o
+ .debug_str     0x0000000000000000      0x7f0 obj/HIDClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/HIDClassDevice.o
+ .debug_frame   0x0000000000000000       0xe4 obj/HIDClassDevice.o
+ .text          0x0000000000000000        0x0 obj/MassStorageClassDevice.o
+ .data          0x0000000000000000        0x0 obj/MassStorageClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/MassStorageClassDevice.o
+ .text.MS_Device_ProcessControlRequest
+                0x0000000000000000       0x7e obj/MassStorageClassDevice.o
+ .text.MS_Device_ConfigureEndpoints
+                0x0000000000000000       0x3e obj/MassStorageClassDevice.o
+ .text.MS_Device_USBTask
+                0x0000000000000000      0x23a obj/MassStorageClassDevice.o
+ .debug_info    0x0000000000000000      0xa09 obj/MassStorageClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x2c9 obj/MassStorageClassDevice.o
+ .debug_loc     0x0000000000000000      0x30a obj/MassStorageClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x30 obj/MassStorageClassDevice.o
+ .debug_ranges  0x0000000000000000       0x70 obj/MassStorageClassDevice.o
+ .debug_line    0x0000000000000000      0x4a5 obj/MassStorageClassDevice.o
+ .debug_str     0x0000000000000000      0x8cf obj/MassStorageClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/MassStorageClassDevice.o
+ .debug_frame   0x0000000000000000       0x80 obj/MassStorageClassDevice.o
+ .text          0x0000000000000000        0x0 obj/MIDIClassDevice.o
+ .data          0x0000000000000000        0x0 obj/MIDIClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/MIDIClassDevice.o
+ .text.MIDI_Device_ConfigureEndpoints
+                0x0000000000000000       0x32 obj/MIDIClassDevice.o
+ .text.MIDI_Device_SendEventPacket
+                0x0000000000000000       0x3e obj/MIDIClassDevice.o
+ .text.MIDI_Device_Flush
+                0x0000000000000000       0x3a obj/MIDIClassDevice.o
+ .text.MIDI_Device_USBTask
+                0x0000000000000000       0x22 obj/MIDIClassDevice.o
+ .text.MIDI_Device_ReceiveEventPacket
+                0x0000000000000000       0x4a obj/MIDIClassDevice.o
+ .debug_info    0x0000000000000000      0x74f obj/MIDIClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x282 obj/MIDIClassDevice.o
+ .debug_loc     0x0000000000000000      0x314 obj/MIDIClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x40 obj/MIDIClassDevice.o
+ .debug_ranges  0x0000000000000000       0x30 obj/MIDIClassDevice.o
+ .debug_line    0x0000000000000000      0x3a5 obj/MIDIClassDevice.o
+ .debug_str     0x0000000000000000      0x799 obj/MIDIClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/MIDIClassDevice.o
+ .debug_frame   0x0000000000000000       0x70 obj/MIDIClassDevice.o
+ .text          0x0000000000000000        0x0 obj/PrinterClassDevice.o
+ .data          0x0000000000000000        0x0 obj/PrinterClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/PrinterClassDevice.o
+ .text.PRNT_Device_ConfigureEndpoints
+                0x0000000000000000       0x38 obj/PrinterClassDevice.o
+ .text.PRNT_Device_SendString
+                0x0000000000000000       0x32 obj/PrinterClassDevice.o
+ .text.PRNT_Device_SendData
+                0x0000000000000000       0x24 obj/PrinterClassDevice.o
+ .text.PRNT_Device_SendByte
+                0x0000000000000000       0x40 obj/PrinterClassDevice.o
+ .text.PRNT_Device_putchar
+                0x0000000000000000       0x22 obj/PrinterClassDevice.o
+ .text.PRNT_Device_Flush
+                0x0000000000000000       0x52 obj/PrinterClassDevice.o
+ .text.PRNT_Device_USBTask
+                0x0000000000000000       0x9c obj/PrinterClassDevice.o
+ .text.PRNT_Device_BytesReceived
+                0x0000000000000000       0x4e obj/PrinterClassDevice.o
+ .text.PRNT_Device_ReceiveByte
+                0x0000000000000000       0x5c obj/PrinterClassDevice.o
+ .text.PRNT_Device_getchar
+                0x0000000000000000       0x14 obj/PrinterClassDevice.o
+ .text.PRNT_Device_getchar_Blocking
+                0x0000000000000000       0x34 obj/PrinterClassDevice.o
+ .text.PRNT_Device_CreateStream
+                0x0000000000000000       0x26 obj/PrinterClassDevice.o
+ .text.PRNT_Device_CreateBlockingStream
+                0x0000000000000000       0x26 obj/PrinterClassDevice.o
+ .text.PRNT_Device_Event_Stub
+                0x0000000000000000        0x2 obj/PrinterClassDevice.o
+ .text.PRNT_Device_ProcessControlRequest
+                0x0000000000000000       0xe4 obj/PrinterClassDevice.o
+ .debug_info    0x0000000000000000      0xd23 obj/PrinterClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x33e obj/PrinterClassDevice.o
+ .debug_loc     0x0000000000000000      0x85e obj/PrinterClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x90 obj/PrinterClassDevice.o
+ .debug_ranges  0x0000000000000000       0x98 obj/PrinterClassDevice.o
+ .debug_line    0x0000000000000000      0x6c5 obj/PrinterClassDevice.o
+ .debug_str     0x0000000000000000      0x9f4 obj/PrinterClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/PrinterClassDevice.o
+ .debug_frame   0x0000000000000000      0x13c obj/PrinterClassDevice.o
+ .text          0x0000000000000000        0x0 obj/RNDISClassDevice.o
+ .data          0x0000000000000000        0x0 obj/RNDISClassDevice.o
+ .bss           0x0000000000000000        0x0 obj/RNDISClassDevice.o
+ .text.RNDIS_Device_ProcessControlRequest
+                0x0000000000000000      0x4f8 obj/RNDISClassDevice.o
+ .text.RNDIS_Device_ConfigureEndpoints
+                0x0000000000000000       0x62 obj/RNDISClassDevice.o
+ .rodata        0x0000000000000000        0x8 obj/RNDISClassDevice.o
+ .text.RNDIS_Device_USBTask
+                0x0000000000000000       0x80 obj/RNDISClassDevice.o
+ .text.RNDIS_Device_IsPacketReceived
+                0x0000000000000000       0x28 obj/RNDISClassDevice.o
+ .text.RNDIS_Device_ReadPacket
+                0x0000000000000000      0x10a obj/RNDISClassDevice.o
+ .text.RNDIS_Device_SendPacket
+                0x0000000000000000       0xe2 obj/RNDISClassDevice.o
+ .progmem.data  0x0000000000000000       0x6c obj/RNDISClassDevice.o
+ .debug_info    0x0000000000000000     0x1226 obj/RNDISClassDevice.o
+ .debug_abbrev  0x0000000000000000      0x395 obj/RNDISClassDevice.o
+ .debug_loc     0x0000000000000000     0x104f obj/RNDISClassDevice.o
+ .debug_aranges
+                0x0000000000000000       0x48 obj/RNDISClassDevice.o
+ .debug_ranges  0x0000000000000000       0x88 obj/RNDISClassDevice.o
+ .debug_line    0x0000000000000000      0x700 obj/RNDISClassDevice.o
+ .debug_str     0x0000000000000000      0xe88 obj/RNDISClassDevice.o
+ .comment       0x0000000000000000       0x12 obj/RNDISClassDevice.o
+ .debug_frame   0x0000000000000000      0x13c obj/RNDISClassDevice.o
+ .text          0x0000000000000000        0x0 obj/AndroidAccessoryClassHost.o
+ .data          0x0000000000000000        0x0 obj/AndroidAccessoryClassHost.o
+ .bss           0x0000000000000000        0x0 obj/AndroidAccessoryClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/AndroidAccessoryClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/AndroidAccessoryClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/AndroidAccessoryClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/AndroidAccessoryClassHost.o
+ .debug_str     0x0000000000000000      0x1cf obj/AndroidAccessoryClassHost.o
+ .comment       0x0000000000000000       0x12 obj/AndroidAccessoryClassHost.o
+ .text          0x0000000000000000        0x0 obj/AudioClassHost.o
+ .data          0x0000000000000000        0x0 obj/AudioClassHost.o
+ .bss           0x0000000000000000        0x0 obj/AudioClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/AudioClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/AudioClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/AudioClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/AudioClassHost.o
+ .debug_str     0x0000000000000000      0x1c4 obj/AudioClassHost.o
+ .comment       0x0000000000000000       0x12 obj/AudioClassHost.o
+ .text          0x0000000000000000        0x0 obj/CDCClassHost.o
+ .data          0x0000000000000000        0x0 obj/CDCClassHost.o
+ .bss           0x0000000000000000        0x0 obj/CDCClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/CDCClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/CDCClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/CDCClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/CDCClassHost.o
+ .debug_str     0x0000000000000000      0x1c2 obj/CDCClassHost.o
+ .comment       0x0000000000000000       0x12 obj/CDCClassHost.o
+ .text          0x0000000000000000        0x0 obj/HIDClassHost.o
+ .data          0x0000000000000000        0x0 obj/HIDClassHost.o
+ .bss           0x0000000000000000        0x0 obj/HIDClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/HIDClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/HIDClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/HIDClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/HIDClassHost.o
+ .debug_str     0x0000000000000000      0x1c2 obj/HIDClassHost.o
+ .comment       0x0000000000000000       0x12 obj/HIDClassHost.o
+ .text          0x0000000000000000        0x0 obj/MassStorageClassHost.o
+ .data          0x0000000000000000        0x0 obj/MassStorageClassHost.o
+ .bss           0x0000000000000000        0x0 obj/MassStorageClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/MassStorageClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/MassStorageClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/MassStorageClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/MassStorageClassHost.o
+ .debug_str     0x0000000000000000      0x1ca obj/MassStorageClassHost.o
+ .comment       0x0000000000000000       0x12 obj/MassStorageClassHost.o
+ .text          0x0000000000000000        0x0 obj/MIDIClassHost.o
+ .data          0x0000000000000000        0x0 obj/MIDIClassHost.o
+ .bss           0x0000000000000000        0x0 obj/MIDIClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/MIDIClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/MIDIClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/MIDIClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/MIDIClassHost.o
+ .debug_str     0x0000000000000000      0x1c3 obj/MIDIClassHost.o
+ .comment       0x0000000000000000       0x12 obj/MIDIClassHost.o
+ .text          0x0000000000000000        0x0 obj/PrinterClassHost.o
+ .data          0x0000000000000000        0x0 obj/PrinterClassHost.o
+ .bss           0x0000000000000000        0x0 obj/PrinterClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/PrinterClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/PrinterClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/PrinterClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/PrinterClassHost.o
+ .debug_str     0x0000000000000000      0x1c6 obj/PrinterClassHost.o
+ .comment       0x0000000000000000       0x12 obj/PrinterClassHost.o
+ .text          0x0000000000000000        0x0 obj/RNDISClassHost.o
+ .data          0x0000000000000000        0x0 obj/RNDISClassHost.o
+ .bss           0x0000000000000000        0x0 obj/RNDISClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/RNDISClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/RNDISClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/RNDISClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/RNDISClassHost.o
+ .debug_str     0x0000000000000000      0x1c4 obj/RNDISClassHost.o
+ .comment       0x0000000000000000       0x12 obj/RNDISClassHost.o
+ .text          0x0000000000000000        0x0 obj/StillImageClassHost.o
+ .data          0x0000000000000000        0x0 obj/StillImageClassHost.o
+ .bss           0x0000000000000000        0x0 obj/StillImageClassHost.o
+ .debug_info    0x0000000000000000       0x56 obj/StillImageClassHost.o
+ .debug_abbrev  0x0000000000000000       0x26 obj/StillImageClassHost.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/StillImageClassHost.o
+ .debug_line    0x0000000000000000       0x1a obj/StillImageClassHost.o
+ .debug_str     0x0000000000000000      0x1c9 obj/StillImageClassHost.o
+ .comment       0x0000000000000000       0x12 obj/StillImageClassHost.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text.avr-libc
+                0x0000000000000000       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strlen_P.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strlen_P.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strlen_P.o)
+ .text.avr-libc
+                0x0000000000000000       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strlen_P.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .text.avr-libc
+                0x0000000000000000       0x1a /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text.avr-libc
+                0x0000000000000000       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memset.o)
+ .text.avr-libc
+                0x0000000000000000        0xe /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memset.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+ .text.avr-libc
+                0x0000000000000000       0x24 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+
+Configuração de memória
+
+Nome             Origem             Tamanho            Atributos
+text             0x0000000000000000 0x0000000000008000 xr
+data             0x0000000000800100 0x0000000000000a00 rw !x
+eeprom           0x0000000000810000 0x0000000000000400 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Mapa de memória e script de vinculador
+
+Endereço de seção .data definido para 0x800100
+LOAD /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+LOAD obj/VirtualSerial.o
+LOAD obj/Descriptors.o
+LOAD obj/serial.o
+LOAD obj/constants.o
+LOAD obj/wl.o
+LOAD obj/disk.o
+LOAD obj/leds.o
+LOAD obj/HIDParser.o
+LOAD obj/Device_AVR8.o
+LOAD obj/EndpointStream_AVR8.o
+LOAD obj/Endpoint_AVR8.o
+LOAD obj/Host_AVR8.o
+LOAD obj/PipeStream_AVR8.o
+LOAD obj/Pipe_AVR8.o
+LOAD obj/USBController_AVR8.o
+LOAD obj/USBInterrupt_AVR8.o
+LOAD obj/ConfigDescriptors.o
+LOAD obj/DeviceStandardReq.o
+LOAD obj/Events.o
+LOAD obj/HostStandardReq.o
+LOAD obj/USBTask.o
+LOAD obj/AudioClassDevice.o
+LOAD obj/CCIDClassDevice.o
+LOAD obj/CDCClassDevice.o
+LOAD obj/HIDClassDevice.o
+LOAD obj/MassStorageClassDevice.o
+LOAD obj/MIDIClassDevice.o
+LOAD obj/PrinterClassDevice.o
+LOAD obj/RNDISClassDevice.o
+LOAD obj/AndroidAccessoryClassHost.o
+LOAD obj/AudioClassHost.o
+LOAD obj/CDCClassHost.o
+LOAD obj/HIDClassHost.o
+LOAD obj/MassStorageClassHost.o
+LOAD obj/MIDIClassHost.o
+LOAD obj/PrinterClassHost.o
+LOAD obj/RNDISClassHost.o
+LOAD obj/StillImageClassHost.o
+LOAD /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a
+END GROUP
+                0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x0000000000000a00]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x219e
+ *(.vectors)
+ .vectors       0x0000000000000000       0xac /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000000000000ac                . = ALIGN (0x2)
+                0x00000000000000ac                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000000000000ac        0x0 linker stubs
+ *(.trampolines*)
+                0x00000000000000ac                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data  0x00000000000000ac       0x8e obj/Descriptors.o
+                0x00000000000000ac                ProductString
+                0x00000000000000ca                ManufacturerString
+                0x00000000000000e6                LanguageString
+                0x00000000000000ea                ConfigurationDescriptor
+                0x0000000000000128                DeviceDescriptor
+                0x000000000000013a                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000013a                __ctors_start = .
+ *(.ctors)
+                0x000000000000013a                __ctors_end = .
+                0x000000000000013a                __dtors_start = .
+ *(.dtors)
+                0x000000000000013a                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000013a        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+                0x000000000000013a                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000013a        0xc /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000146       0x16 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000146                __do_copy_data
+ .init4         0x000000000000015c       0x10 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+                0x000000000000015c                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000000016c        0x6 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ *(.init9)
+ *(.text)
+ .text          0x0000000000000172        0x2 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+                0x0000000000000172                __vector_38
+                0x0000000000000172                __vector_22
+                0x0000000000000172                __vector_28
+                0x0000000000000172                __vector_1
+                0x0000000000000172                __vector_32
+                0x0000000000000172                __vector_34
+                0x0000000000000172                __vector_24
+                0x0000000000000172                __vector_12
+                0x0000000000000172                __bad_interrupt
+                0x0000000000000172                __vector_6
+                0x0000000000000172                __vector_31
+                0x0000000000000172                __vector_35
+                0x0000000000000172                __vector_39
+                0x0000000000000172                __vector_3
+                0x0000000000000172                __vector_23
+                0x0000000000000172                __vector_30
+                0x0000000000000172                __vector_13
+                0x0000000000000172                __vector_17
+                0x0000000000000172                __vector_19
+                0x0000000000000172                __vector_7
+                0x0000000000000172                __vector_41
+                0x0000000000000172                __vector_27
+                0x0000000000000172                __vector_5
+                0x0000000000000172                __vector_33
+                0x0000000000000172                __vector_37
+                0x0000000000000172                __vector_4
+                0x0000000000000172                __vector_9
+                0x0000000000000172                __vector_2
+                0x0000000000000172                __vector_21
+                0x0000000000000172                __vector_15
+                0x0000000000000172                __vector_36
+                0x0000000000000172                __vector_29
+                0x0000000000000172                __vector_40
+                0x0000000000000172                __vector_8
+                0x0000000000000172                __vector_26
+                0x0000000000000172                __vector_14
+                0x0000000000000172                __vector_16
+                0x0000000000000172                __vector_18
+                0x0000000000000172                __vector_42
+                0x0000000000000174                . = ALIGN (0x2)
+ *(.text.*)
+ .text.LEDs_SetAllLEDs
+                0x0000000000000174       0x28 obj/VirtualSerial.o
+ .text.__vector_25
+                0x000000000000019c      0x208 obj/VirtualSerial.o
+                0x000000000000019c                __vector_25
+ .text.__vector_20
+                0x00000000000003a4       0x2e obj/VirtualSerial.o
+                0x00000000000003a4                __vector_20
+ .text.config_timer1_overflow
+                0x00000000000003d2       0x12 obj/VirtualSerial.o
+                0x00000000000003d2                config_timer1_overflow
+ .text.SetupHardware
+                0x00000000000003e4       0x44 obj/VirtualSerial.o
+                0x00000000000003e4                SetupHardware
+ .text.init_timer1
+                0x0000000000000428       0x1a obj/VirtualSerial.o
+                0x0000000000000428                init_timer1
+ .text.disable_timer1
+                0x0000000000000442        0xc obj/VirtualSerial.o
+                0x0000000000000442                disable_timer1
+ .text.EVENT_USB_Device_Connect
+                0x000000000000044e        0x4 obj/VirtualSerial.o
+                0x000000000000044e                EVENT_USB_Device_Connect
+ .text.EVENT_USB_Device_Disconnect
+                0x0000000000000452        0x4 obj/VirtualSerial.o
+                0x0000000000000452                EVENT_USB_Device_Disconnect
+ .text.EVENT_USB_Device_ConfigurationChanged
+                0x0000000000000456       0x14 obj/VirtualSerial.o
+                0x0000000000000456                EVENT_USB_Device_ConfigurationChanged
+ .text.EVENT_USB_Device_ControlRequest
+                0x000000000000046a        0x8 obj/VirtualSerial.o
+                0x000000000000046a                EVENT_USB_Device_ControlRequest
+ .text.EVENT_CDC_Device_ControLineStateChanged
+                0x0000000000000472        0x2 obj/VirtualSerial.o
+                0x0000000000000472                EVENT_CDC_Device_ControLineStateChanged
+ .text.ajust_pins_hex2int
+                0x0000000000000474       0x1c obj/VirtualSerial.o
+                0x0000000000000474                ajust_pins_hex2int
+ .text.USB_ReadHost
+                0x0000000000000490       0x66 obj/VirtualSerial.o
+                0x0000000000000490                USB_ReadHost
+ .text.USB_SendHost
+                0x00000000000004f6       0x40 obj/VirtualSerial.o
+                0x00000000000004f6                USB_SendHost
+ .text.USB_SendHost_byte
+                0x0000000000000536        0xe obj/VirtualSerial.o
+                0x0000000000000536                USB_SendHost_byte
+ .text.USB_packet_parser
+                0x0000000000000544       0xa6 obj/VirtualSerial.o
+                0x0000000000000544                USB_packet_parser
+ .text.fill_init_wl_response
+                0x00000000000005ea       0x4e obj/VirtualSerial.o
+                0x00000000000005ea                fill_init_wl_response
+ .text.mount_request_slave
+                0x0000000000000638       0x52 obj/VirtualSerial.o
+                0x0000000000000638                mount_request_slave
+ .text.handler_master_wl
+                0x000000000000068a       0x58 obj/VirtualSerial.o
+                0x000000000000068a                handler_master_wl
+ .text.print_wavelength_matrix
+                0x00000000000006e2       0x82 obj/VirtualSerial.o
+                0x00000000000006e2                print_wavelength_matrix
+ .text.startup.main
+                0x0000000000000764      0x43e obj/VirtualSerial.o
+                0x0000000000000764                main
+ .text.CALLBACK_USB_GetDescriptor
+                0x0000000000000ba2       0x60 obj/Descriptors.o
+                0x0000000000000ba2                CALLBACK_USB_GetDescriptor
+ .text.usart_init
+                0x0000000000000c02       0x18 obj/serial.o
+                0x0000000000000c02                usart_init
+ .text.usart_send_byte
+                0x0000000000000c1a        0xe obj/serial.o
+                0x0000000000000c1a                usart_send_byte
+ .text.usart_send_buffer
+                0x0000000000000c28       0x26 obj/serial.o
+                0x0000000000000c28                usart_send_buffer
+ .text.usart_flush
+                0x0000000000000c4e       0x14 obj/serial.o
+                0x0000000000000c4e                usart_flush
+ .text.crc16_update
+                0x0000000000000c62       0x1c obj/serial.o
+                0x0000000000000c62                crc16_update
+ .text.crc16_compute
+                0x0000000000000c7e       0x2a obj/serial.o
+                0x0000000000000c7e                crc16_compute
+ .text.configure_modbus_output_pins
+                0x0000000000000ca8       0x28 obj/serial.o
+                0x0000000000000ca8                configure_modbus_output_pins
+ .text.configure_modbus_receive_mode
+                0x0000000000000cd0       0x28 obj/serial.o
+                0x0000000000000cd0                configure_modbus_receive_mode
+ .text.configure_modbus_transmitter_mode
+                0x0000000000000cf8       0x28 obj/serial.o
+                0x0000000000000cf8                configure_modbus_transmitter_mode
+ .text.port_to_ddr
+                0x0000000000000d20       0x1e obj/constants.o
+                0x0000000000000d20                port_to_ddr
+ .text.port_to_port
+                0x0000000000000d3e       0x1e obj/constants.o
+                0x0000000000000d3e                port_to_port
+ .text.search_wavelenth
+                0x0000000000000d5c       0x26 obj/wl.o
+                0x0000000000000d5c                search_wavelenth
+ .text.get_num_slaves_by_wavelength
+                0x0000000000000d82       0x1c obj/wl.o
+                0x0000000000000d82                get_num_slaves_by_wavelength
+ .text.init_wavelength_matrix
+                0x0000000000000d9e       0x1e obj/wl.o
+                0x0000000000000d9e                init_wavelength_matrix
+ .text.fill_field_wavelength_matriz
+                0x0000000000000dbc       0x5a obj/wl.o
+                0x0000000000000dbc                fill_field_wavelength_matriz
+ .text.eeprom_read2buffer
+                0x0000000000000e16        0x4 obj/disk.o
+                0x0000000000000e16                eeprom_read2buffer
+ .text.eeprom_read_id
+                0x0000000000000e1a        0x4 obj/disk.o
+                0x0000000000000e1a                eeprom_read_id
+ .text.configure_leds_output
+                0x0000000000000e1e       0x6e obj/leds.o
+                0x0000000000000e1e                configure_leds_output
+ .text.set_led_state
+                0x0000000000000e8c       0x88 obj/leds.o
+                0x0000000000000e8c                set_led_state
+ .text.set_leds_all_off
+                0x0000000000000f14       0x24 obj/leds.o
+                0x0000000000000f14                set_leds_all_off
+ .text.Endpoint_Write_Control_Stream_LE
+                0x0000000000000f38       0xbe obj/EndpointStream_AVR8.o
+                0x0000000000000f38                Endpoint_Write_Control_Stream_LE
+ .text.Endpoint_Write_Control_PStream_LE
+                0x0000000000000ff6       0xc0 obj/EndpointStream_AVR8.o
+                0x0000000000000ff6                Endpoint_Write_Control_PStream_LE
+ .text.Endpoint_ConfigureEndpoint_Prv
+                0x00000000000010b6       0x68 obj/Endpoint_AVR8.o
+                0x00000000000010b6                Endpoint_ConfigureEndpoint_Prv
+ .text.Endpoint_ConfigureEndpointTable
+                0x000000000000111e       0x78 obj/Endpoint_AVR8.o
+                0x000000000000111e                Endpoint_ConfigureEndpointTable
+ .text.Endpoint_ClearStatusStage
+                0x0000000000001196       0x3e obj/Endpoint_AVR8.o
+                0x0000000000001196                Endpoint_ClearStatusStage
+ .text.Endpoint_WaitUntilReady
+                0x00000000000011d4       0x5e obj/Endpoint_AVR8.o
+                0x00000000000011d4                Endpoint_WaitUntilReady
+ .text.USB_ResetInterface
+                0x0000000000001232       0x80 obj/USBController_AVR8.o
+                0x0000000000001232                USB_ResetInterface
+ .text.USB_Init
+                0x00000000000012b2       0x20 obj/USBController_AVR8.o
+                0x00000000000012b2                USB_Init
+ .text.USB_INT_DisableAllInterrupts
+                0x00000000000012d2       0x10 obj/USBInterrupt_AVR8.o
+                0x00000000000012d2                USB_INT_DisableAllInterrupts
+ .text.USB_INT_ClearAllInterrupts
+                0x00000000000012e2        0xa obj/USBInterrupt_AVR8.o
+                0x00000000000012e2                USB_INT_ClearAllInterrupts
+ .text.__vector_10
+                0x00000000000012ec      0x19a obj/USBInterrupt_AVR8.o
+                0x00000000000012ec                __vector_10
+ .text.__vector_11
+                0x0000000000001486       0x76 obj/USBInterrupt_AVR8.o
+                0x0000000000001486                __vector_11
+ .text.USB_Device_ProcessControlRequest
+                0x00000000000014fc      0x2ba obj/DeviceStandardReq.o
+                0x00000000000014fc                USB_Device_ProcessControlRequest
+ .text.USB_Event_Stub
+                0x00000000000017b6        0x2 obj/Events.o
+                0x00000000000017b6                EVENT_USB_Device_WakeUp
+                0x00000000000017b6                USB_Event_Stub
+                0x00000000000017b6                EVENT_USB_Device_Suspend
+                0x00000000000017b6                EVENT_USB_Device_StartOfFrame
+                0x00000000000017b6                EVENT_USB_Device_Reset
+ .text.USB_USBTask
+                0x00000000000017b8       0x36 obj/USBTask.o
+                0x00000000000017b8                USB_USBTask
+ .text.CDC_Device_ConfigureEndpoints
+                0x00000000000017ee       0x4a obj/CDCClassDevice.o
+                0x00000000000017ee                CDC_Device_ConfigureEndpoints
+ .text.CDC_Device_SendByte
+                0x0000000000001838       0x56 obj/CDCClassDevice.o
+                0x0000000000001838                CDC_Device_SendByte
+ .text.CDC_Device_putchar
+                0x000000000000188e       0x20 obj/CDCClassDevice.o
+ .text.CDC_Device_Flush
+                0x00000000000018ae       0x60 obj/CDCClassDevice.o
+                0x00000000000018ae                CDC_Device_Flush
+ .text.CDC_Device_USBTask
+                0x000000000000190e       0x2c obj/CDCClassDevice.o
+                0x000000000000190e                CDC_Device_USBTask
+ .text.CDC_Device_BytesReceived
+                0x000000000000193a       0x5e obj/CDCClassDevice.o
+                0x000000000000193a                CDC_Device_BytesReceived
+ .text.CDC_Device_ReceiveByte
+                0x0000000000001998       0x6c obj/CDCClassDevice.o
+                0x0000000000001998                CDC_Device_ReceiveByte
+ .text.CDC_Device_getchar
+                0x0000000000001a04       0x12 obj/CDCClassDevice.o
+ .text.CDC_Device_CreateStream
+                0x0000000000001a16       0x26 obj/CDCClassDevice.o
+                0x0000000000001a16                CDC_Device_CreateStream
+ .text.CDC_Device_Event_Stub
+                0x0000000000001a3c        0x2 obj/CDCClassDevice.o
+                0x0000000000001a3c                EVENT_CDC_Device_LineEncodingChanged
+                0x0000000000001a3c                CDC_Device_Event_Stub
+ .text.CDC_Device_Event_Stub_2
+                0x0000000000001a3e        0x2 obj/CDCClassDevice.o
+                0x0000000000001a3e                CDC_Device_Event_Stub_2
+                0x0000000000001a3e                EVENT_CDC_Device_BreakSent
+ .text.CDC_Device_ProcessControlRequest
+                0x0000000000001a40      0x158 obj/CDCClassDevice.o
+                0x0000000000001a40                CDC_Device_ProcessControlRequest
+ .text.avr-libc
+                0x0000000000001b98       0x60 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x0000000000001b98                fputc
+ .text.avr-libc
+                0x0000000000001bf8       0x26 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+                0x0000000000001bf8                printf
+ .text.avr-libc
+                0x0000000000001c1e        0xa /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+                0x0000000000001c1e                putchar
+ .text.avr-libc
+                0x0000000000001c28       0x56 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+                0x0000000000001c28                puts
+ .text.avr-libc
+                0x0000000000001c7e      0x396 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x0000000000001c7e                vfprintf
+ .text.avr-libc
+                0x0000000000002014       0x16 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x0000000000002014                strnlen_P
+ .text.avr-libc
+                0x000000000000202a       0x16 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x000000000000202a                strnlen
+ .text.avr-libc
+                0x0000000000002040       0xbc /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x0000000000002040                __ultoa_invert
+ .text.avr-libc
+                0x00000000000020fc       0x20 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+                0x00000000000020fc                eeprom_read_block
+                0x0000000000002100                eeprom_read_blraw
+ .text.avr-libc
+                0x000000000000211c       0x10 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+                0x000000000000211c                eeprom_read_byte
+ .text.libgcc.prologue
+                0x000000000000212c       0x38 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+                0x000000000000212c                __prologue_saves__
+ .text.libgcc.prologue
+                0x0000000000002164       0x36 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+                0x0000000000002164                __epilogue_restores__
+                0x000000000000219a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000219a        0x0 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+                0x000000000000219a                exit
+                0x000000000000219a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000219a        0x4 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000000000219e                _etext = .
+
+.data           0x0000000000800100      0x1ea carga com endereço 0x000000000000219e
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100       0x1d obj/VirtualSerial.o
+                0x0000000000800100                crc_calc
+                0x0000000000800102                VirtualSerial_CDC_Interface
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x000000000080011d       0x14 obj/constants.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800131      0x1b9 obj/VirtualSerial.o
+                                        0x1bd (tamanho antes de relaxar)
+ *(.gnu.linkonce.r*)
+                0x00000000008002ea                . = ALIGN (0x2)
+                0x00000000008002ea                _edata = .
+                0x00000000008002ea                PROVIDE (__data_end, .)
+
+.bss            0x00000000008002ea      0x19d
+                0x00000000008002ea                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00000000008002ea       0x19 obj/VirtualSerial.o
+                0x00000000008002ea                next_append
+                0x00000000008002ec                flag_4s
+                0x00000000008002ed                is_nack
+                0x00000000008002ee                is_ack
+                0x00000000008002ef                valid_packet
+                0x00000000008002f0                crc_recv
+                0x00000000008002f2                expected_len
+                0x00000000008002f3                idx
+                0x00000000008002f4                state
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800303      0x171 obj/VirtualSerial.o
+                0x0000000000800303                requested_slave
+                0x0000000000800304                wl_list
+                0x0000000000800370                requested_cmd
+                0x0000000000800371                wl_init_host_response
+                0x00000000008003bd                requested_len_max
+                0x00000000008003be                usb_in_buffer
+                0x00000000008003c4                wl_master
+                0x000000000080040c                buf
+ COMMON         0x0000000000800474        0x3 obj/DeviceStandardReq.o
+                0x0000000000800474                USB_Device_ConfigurationNumber
+                0x0000000000800475                USB_Device_CurrentlySelfPowered
+                0x0000000000800476                USB_Device_RemoteWakeupEnabled
+ COMMON         0x0000000000800477        0xa obj/USBTask.o
+                0x0000000000800477                USB_IsInitialized
+                0x0000000000800478                USB_DeviceState
+                0x0000000000800479                USB_ControlRequest
+ COMMON         0x0000000000800481        0x6 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+                0x0000000000800481                __iob
+                0x0000000000800487                PROVIDE (__bss_end, .)
+                0x000000000000219e                __data_load_start = LOADADDR (.data)
+                0x0000000000002388                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800487        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000800487                _end = .
+                [!provide]                        PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 obj/VirtualSerial.o
+                                         0x12 (tamanho antes de relaxar)
+ .comment       0x0000000000000011       0x12 obj/Descriptors.o
+ .comment       0x0000000000000011       0x12 obj/serial.o
+ .comment       0x0000000000000011       0x12 obj/constants.o
+ .comment       0x0000000000000011       0x12 obj/wl.o
+ .comment       0x0000000000000011       0x12 obj/disk.o
+ .comment       0x0000000000000011       0x12 obj/leds.o
+ .comment       0x0000000000000011       0x12 obj/EndpointStream_AVR8.o
+ .comment       0x0000000000000011       0x12 obj/Endpoint_AVR8.o
+ .comment       0x0000000000000011       0x12 obj/USBController_AVR8.o
+ .comment       0x0000000000000011       0x12 obj/USBInterrupt_AVR8.o
+ .comment       0x0000000000000011       0x12 obj/DeviceStandardReq.o
+ .comment       0x0000000000000011       0x12 obj/Events.o
+ .comment       0x0000000000000011       0x12 obj/USBTask.o
+ .comment       0x0000000000000011       0x12 obj/CDCClassDevice.o
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x4b0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0xe0 obj/VirtualSerial.o
+ .debug_aranges
+                0x00000000000000e0       0x20 obj/Descriptors.o
+ .debug_aranges
+                0x0000000000000100       0x68 obj/serial.o
+ .debug_aranges
+                0x0000000000000168       0x28 obj/constants.o
+ .debug_aranges
+                0x0000000000000190       0x38 obj/wl.o
+ .debug_aranges
+                0x00000000000001c8       0x28 obj/disk.o
+ .debug_aranges
+                0x00000000000001f0       0x30 obj/leds.o
+ .debug_aranges
+                0x0000000000000220       0xc8 obj/EndpointStream_AVR8.o
+ .debug_aranges
+                0x00000000000002e8       0x40 obj/Endpoint_AVR8.o
+ .debug_aranges
+                0x0000000000000328       0x30 obj/USBController_AVR8.o
+ .debug_aranges
+                0x0000000000000358       0x38 obj/USBInterrupt_AVR8.o
+ .debug_aranges
+                0x0000000000000390       0x20 obj/DeviceStandardReq.o
+ .debug_aranges
+                0x00000000000003b0       0x30 obj/Events.o
+ .debug_aranges
+                0x00000000000003e0       0x20 obj/USBTask.o
+ .debug_aranges
+                0x0000000000000400       0xb0 obj/CDCClassDevice.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x87a9
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x9f4 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ .debug_info    0x00000000000009f4     0x1bc1 obj/VirtualSerial.o
+ .debug_info    0x00000000000025b5      0x938 obj/Descriptors.o
+ .debug_info    0x0000000000002eed      0x472 obj/serial.o
+ .debug_info    0x000000000000335f      0x1e6 obj/constants.o
+ .debug_info    0x0000000000003545      0x38a obj/wl.o
+ .debug_info    0x00000000000038cf      0x162 obj/disk.o
+ .debug_info    0x0000000000003a31      0x346 obj/leds.o
+ .debug_info    0x0000000000003d77     0x17d8 obj/EndpointStream_AVR8.o
+ .debug_info    0x000000000000554f      0x64a obj/Endpoint_AVR8.o
+ .debug_info    0x0000000000005b99      0x54a obj/USBController_AVR8.o
+ .debug_info    0x00000000000060e3      0x875 obj/USBInterrupt_AVR8.o
+ .debug_info    0x0000000000006958      0xa60 obj/DeviceStandardReq.o
+ .debug_info    0x00000000000073b8       0xe2 obj/Events.o
+ .debug_info    0x000000000000749a      0x2a7 obj/USBTask.o
+ .debug_info    0x0000000000007741     0x1068 obj/CDCClassDevice.o
+
+.debug_abbrev   0x0000000000000000     0x291a
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x96a /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ .debug_abbrev  0x000000000000096a      0x536 obj/VirtualSerial.o
+ .debug_abbrev  0x0000000000000ea0      0x1bb obj/Descriptors.o
+ .debug_abbrev  0x000000000000105b      0x21d obj/serial.o
+ .debug_abbrev  0x0000000000001278      0x111 obj/constants.o
+ .debug_abbrev  0x0000000000001389      0x1c8 obj/wl.o
+ .debug_abbrev  0x0000000000001551       0xce obj/disk.o
+ .debug_abbrev  0x000000000000161f      0x175 obj/leds.o
+ .debug_abbrev  0x0000000000001794      0x20a obj/EndpointStream_AVR8.o
+ .debug_abbrev  0x000000000000199e      0x251 obj/Endpoint_AVR8.o
+ .debug_abbrev  0x0000000000001bef      0x1af obj/USBController_AVR8.o
+ .debug_abbrev  0x0000000000001d9e      0x231 obj/USBInterrupt_AVR8.o
+ .debug_abbrev  0x0000000000001fcf      0x2fc obj/DeviceStandardReq.o
+ .debug_abbrev  0x00000000000022cb       0x81 obj/Events.o
+ .debug_abbrev  0x000000000000234c      0x198 obj/USBTask.o
+ .debug_abbrev  0x00000000000024e4      0x436 obj/CDCClassDevice.o
+
+.debug_line     0x0000000000000000     0x4526
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1a /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ .debug_line    0x000000000000001a      0xcf0 obj/VirtualSerial.o
+ .debug_line    0x0000000000000d0a      0x1e7 obj/Descriptors.o
+ .debug_line    0x0000000000000ef1      0x29d obj/serial.o
+ .debug_line    0x000000000000118e       0xc2 obj/constants.o
+ .debug_line    0x0000000000001250      0x14d obj/wl.o
+ .debug_line    0x000000000000139d       0xbd obj/disk.o
+ .debug_line    0x000000000000145a      0x192 obj/leds.o
+ .debug_line    0x00000000000015ec     0x1367 obj/EndpointStream_AVR8.o
+ .debug_line    0x0000000000002953      0x482 obj/Endpoint_AVR8.o
+ .debug_line    0x0000000000002dd5      0x2d1 obj/USBController_AVR8.o
+ .debug_line    0x00000000000030a6      0x4f7 obj/USBInterrupt_AVR8.o
+ .debug_line    0x000000000000359d      0x48d obj/DeviceStandardReq.o
+ .debug_line    0x0000000000003a2a       0xa1 obj/Events.o
+ .debug_line    0x0000000000003acb      0x15e obj/USBTask.o
+ .debug_line    0x0000000000003c29      0x8fd obj/CDCClassDevice.o
+
+.debug_frame    0x0000000000000000      0xdf0
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x360 obj/VirtualSerial.o
+ .debug_frame   0x0000000000000360       0x24 obj/Descriptors.o
+ .debug_frame   0x0000000000000384       0xe4 obj/serial.o
+ .debug_frame   0x0000000000000468       0x34 obj/constants.o
+ .debug_frame   0x000000000000049c       0x78 obj/wl.o
+ .debug_frame   0x0000000000000514       0x34 obj/disk.o
+ .debug_frame   0x0000000000000548       0x90 obj/leds.o
+ .debug_frame   0x00000000000005d8      0x404 obj/EndpointStream_AVR8.o
+ .debug_frame   0x00000000000009dc       0x78 obj/Endpoint_AVR8.o
+ .debug_frame   0x0000000000000a54       0x58 obj/USBController_AVR8.o
+ .debug_frame   0x0000000000000aac       0xe8 obj/USBInterrupt_AVR8.o
+ .debug_frame   0x0000000000000b94       0x3c obj/DeviceStandardReq.o
+ .debug_frame   0x0000000000000bd0       0x44 obj/Events.o
+ .debug_frame   0x0000000000000c14       0x2c obj/USBTask.o
+ .debug_frame   0x0000000000000c40      0x1b0 obj/CDCClassDevice.o
+
+.debug_str      0x0000000000000000     0x2d72
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x371 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+ .debug_str     0x0000000000000371      0xc43 obj/VirtualSerial.o
+                                        0xd22 (tamanho antes de relaxar)
+ .debug_str     0x0000000000000fb4      0x928 obj/Descriptors.o
+                                        0xc8e (tamanho antes de relaxar)
+ .debug_str     0x00000000000018dc       0x44 obj/serial.o
+                                        0x2c9 (tamanho antes de relaxar)
+ .debug_str     0x0000000000001920        0xc obj/constants.o
+                                        0x22d (tamanho antes de relaxar)
+ .debug_str     0x000000000000192c       0x13 obj/wl.o
+                                        0x2c8 (tamanho antes de relaxar)
+ .debug_str     0x000000000000193f       0x39 obj/disk.o
+                                        0x20f (tamanho antes de relaxar)
+ .debug_str     0x0000000000001978       0x15 obj/leds.o
+                                        0x29d (tamanho antes de relaxar)
+ .debug_str     0x000000000000198d      0x628 obj/EndpointStream_AVR8.o
+                                        0x8e8 (tamanho antes de relaxar)
+ .debug_str     0x0000000000001fb5      0x2d2 obj/Endpoint_AVR8.o
+                                        0x6a8 (tamanho antes de relaxar)
+ .debug_str     0x0000000000002287      0x219 obj/USBController_AVR8.o
+                                        0x5cc (tamanho antes de relaxar)
+ .debug_str     0x00000000000024a0      0x18c obj/USBInterrupt_AVR8.o
+                                        0x69c (tamanho antes de relaxar)
+ .debug_str     0x000000000000262c      0x41a obj/DeviceStandardReq.o
+                                        0x9d9 (tamanho antes de relaxar)
+ .debug_str     0x0000000000002a46       0x52 obj/Events.o
+                                        0x1ef (tamanho antes de relaxar)
+ .debug_str     0x0000000000002a98       0x3e obj/USBTask.o
+                                        0x3fb (tamanho antes de relaxar)
+ .debug_str     0x0000000000002ad6      0x29c obj/CDCClassDevice.o
+                                        0xb3a (tamanho antes de relaxar)
+
+.debug_loc      0x0000000000000000     0x58ef
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000     0x11fc obj/VirtualSerial.o
+ .debug_loc     0x00000000000011fc      0x17a obj/Descriptors.o
+ .debug_loc     0x0000000000001376      0x3d5 obj/serial.o
+ .debug_loc     0x000000000000174b       0x5e obj/constants.o
+ .debug_loc     0x00000000000017a9      0x2ea obj/wl.o
+ .debug_loc     0x0000000000001a93       0x98 obj/disk.o
+ .debug_loc     0x0000000000001b2b      0x301 obj/leds.o
+ .debug_loc     0x0000000000001e2c     0x2410 obj/EndpointStream_AVR8.o
+ .debug_loc     0x000000000000423c      0x422 obj/Endpoint_AVR8.o
+ .debug_loc     0x000000000000465e       0xd5 obj/USBController_AVR8.o
+ .debug_loc     0x0000000000004733      0x3e7 obj/USBInterrupt_AVR8.o
+ .debug_loc     0x0000000000004b1a      0x324 obj/DeviceStandardReq.o
+ .debug_loc     0x0000000000004e3e       0x49 obj/USBTask.o
+ .debug_loc     0x0000000000004e87      0xa68 obj/CDCClassDevice.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x8f8
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000      0x1f8 obj/VirtualSerial.o
+ .debug_ranges  0x00000000000001f8       0x28 obj/Descriptors.o
+ .debug_ranges  0x0000000000000220       0x88 obj/serial.o
+ .debug_ranges  0x00000000000002a8       0x18 obj/constants.o
+ .debug_ranges  0x00000000000002c0       0x40 obj/wl.o
+ .debug_ranges  0x0000000000000300       0x18 obj/disk.o
+ .debug_ranges  0x0000000000000318       0x38 obj/leds.o
+ .debug_ranges  0x0000000000000350      0x238 obj/EndpointStream_AVR8.o
+ .debug_ranges  0x0000000000000588       0xe8 obj/Endpoint_AVR8.o
+ .debug_ranges  0x0000000000000670       0x20 obj/USBController_AVR8.o
+ .debug_ranges  0x0000000000000690       0x28 obj/USBInterrupt_AVR8.o
+ .debug_ranges  0x00000000000006b8      0x128 obj/DeviceStandardReq.o
+ .debug_ranges  0x00000000000007e0       0x20 obj/Events.o
+ .debug_ranges  0x0000000000000800       0x58 obj/USBTask.o
+ .debug_ranges  0x0000000000000858       0xa0 obj/CDCClassDevice.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(VirtualSerial.elf elf32-avr)
+LOAD linker stubs
+
+Tabela de referência cruzada
+
+Símbolo                                          Arquivo
+Audio_Device_ConfigureEndpoints                   obj/AudioClassDevice.o
+Audio_Device_Event_Stub                           obj/AudioClassDevice.o
+Audio_Device_ProcessControlRequest                obj/AudioClassDevice.o
+CALLBACK_Audio_Device_GetSetEndpointProperty      obj/AudioClassDevice.o
+CALLBACK_Audio_Device_GetSetInterfaceProperty     obj/AudioClassDevice.o
+CALLBACK_CCID_Abort                               obj/CCIDClassDevice.o
+CALLBACK_CCID_GetParameters_T0                    obj/CCIDClassDevice.o
+CALLBACK_CCID_GetSlotStatus                       obj/CCIDClassDevice.o
+CALLBACK_CCID_IccPowerOff                         obj/CCIDClassDevice.o
+CALLBACK_CCID_IccPowerOn                          obj/CCIDClassDevice.o
+CALLBACK_CCID_SetParameters_T0                    obj/CCIDClassDevice.o
+CALLBACK_CCID_XfrBlock                            obj/CCIDClassDevice.o
+CALLBACK_HIDParser_FilterHIDReportItem            obj/HIDParser.o
+CALLBACK_HID_Device_CreateHIDReport               obj/HIDClassDevice.o
+CALLBACK_HID_Device_ProcessHIDReport              obj/HIDClassDevice.o
+CALLBACK_MS_Device_SCSICommandReceived            obj/MassStorageClassDevice.o
+CALLBACK_USB_GetDescriptor                        obj/Descriptors.o
+                                                  obj/DeviceStandardReq.o
+CCID_CheckStatusNoError                           obj/CCIDClassDevice.o
+CCID_Device_ConfigureEndpoints                    obj/CCIDClassDevice.o
+CCID_Device_ProcessControlRequest                 obj/CCIDClassDevice.o
+CCID_Device_USBTask                               obj/CCIDClassDevice.o
+CDC_Device_BytesReceived                          obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+CDC_Device_ConfigureEndpoints                     obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+CDC_Device_CreateBlockingStream                   obj/CDCClassDevice.o
+CDC_Device_CreateStream                           obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+CDC_Device_Event_Stub                             obj/CDCClassDevice.o
+CDC_Device_Event_Stub_2                           obj/CDCClassDevice.o
+CDC_Device_Flush                                  obj/CDCClassDevice.o
+CDC_Device_ProcessControlRequest                  obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+CDC_Device_ReceiveByte                            obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+CDC_Device_SendByte                               obj/CDCClassDevice.o
+CDC_Device_SendControlLineStateChange             obj/CDCClassDevice.o
+CDC_Device_SendData                               obj/CDCClassDevice.o
+CDC_Device_SendData_P                             obj/CDCClassDevice.o
+CDC_Device_SendString                             obj/CDCClassDevice.o
+CDC_Device_SendString_P                           obj/CDCClassDevice.o
+CDC_Device_USBTask                                obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+ConfigurationDescriptor                           obj/Descriptors.o
+DeviceDescriptor                                  obj/Descriptors.o
+EVENT_Audio_Device_StreamStartStop                obj/AudioClassDevice.o
+EVENT_CDC_Device_BreakSent                        obj/CDCClassDevice.o
+EVENT_CDC_Device_ControLineStateChanged           obj/VirtualSerial.o
+EVENT_CDC_Device_LineEncodingChanged              obj/CDCClassDevice.o
+EVENT_PRNT_Device_SoftReset                       obj/PrinterClassDevice.o
+EVENT_USB_Device_ConfigurationChanged             obj/VirtualSerial.o
+                                                  obj/DeviceStandardReq.o
+EVENT_USB_Device_Connect                          obj/VirtualSerial.o
+                                                  obj/USBInterrupt_AVR8.o
+EVENT_USB_Device_ControlRequest                   obj/VirtualSerial.o
+                                                  obj/DeviceStandardReq.o
+EVENT_USB_Device_Disconnect                       obj/VirtualSerial.o
+                                                  obj/USBInterrupt_AVR8.o
+EVENT_USB_Device_Reset                            obj/Events.o
+                                                  obj/USBInterrupt_AVR8.o
+EVENT_USB_Device_StartOfFrame                     obj/Events.o
+                                                  obj/USBInterrupt_AVR8.o
+EVENT_USB_Device_Suspend                          obj/Events.o
+                                                  obj/USBInterrupt_AVR8.o
+EVENT_USB_Device_WakeUp                           obj/Events.o
+                                                  obj/USBInterrupt_AVR8.o
+Endpoint_ClearEndpoints                           obj/Endpoint_AVR8.o
+Endpoint_ClearStatusStage                         obj/Endpoint_AVR8.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/MassStorageClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/AudioClassDevice.o
+                                                  obj/DeviceStandardReq.o
+Endpoint_ConfigureEndpointTable                   obj/Endpoint_AVR8.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/MIDIClassDevice.o
+                                                  obj/MassStorageClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/CCIDClassDevice.o
+                                                  obj/AudioClassDevice.o
+Endpoint_ConfigureEndpoint_Prv                    obj/Endpoint_AVR8.o
+                                                  obj/USBInterrupt_AVR8.o
+                                                  obj/USBController_AVR8.o
+Endpoint_Discard_Stream                           obj/EndpointStream_AVR8.o
+                                                  obj/RNDISClassDevice.o
+Endpoint_Null_Stream                              obj/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_BE                  obj/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_LE                  obj/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_BE                   obj/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_LE                   obj/EndpointStream_AVR8.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/AudioClassDevice.o
+Endpoint_Read_EStream_BE                          obj/EndpointStream_AVR8.o
+Endpoint_Read_EStream_LE                          obj/EndpointStream_AVR8.o
+Endpoint_Read_Stream_BE                           obj/EndpointStream_AVR8.o
+Endpoint_Read_Stream_LE                           obj/EndpointStream_AVR8.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/MIDIClassDevice.o
+                                                  obj/MassStorageClassDevice.o
+                                                  obj/CCIDClassDevice.o
+Endpoint_WaitUntilReady                           obj/Endpoint_AVR8.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/MIDIClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_BE                 obj/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_LE                 obj/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_BE                 obj/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_LE                 obj/EndpointStream_AVR8.o
+                                                  obj/DeviceStandardReq.o
+Endpoint_Write_Control_Stream_BE                  obj/EndpointStream_AVR8.o
+Endpoint_Write_Control_Stream_LE                  obj/EndpointStream_AVR8.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/AudioClassDevice.o
+                                                  obj/DeviceStandardReq.o
+Endpoint_Write_EStream_BE                         obj/EndpointStream_AVR8.o
+Endpoint_Write_EStream_LE                         obj/EndpointStream_AVR8.o
+Endpoint_Write_PStream_BE                         obj/EndpointStream_AVR8.o
+Endpoint_Write_PStream_LE                         obj/EndpointStream_AVR8.o
+                                                  obj/CDCClassDevice.o
+Endpoint_Write_Stream_BE                          obj/EndpointStream_AVR8.o
+Endpoint_Write_Stream_LE                          obj/EndpointStream_AVR8.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/MIDIClassDevice.o
+                                                  obj/MassStorageClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/CCIDClassDevice.o
+HID_Device_ConfigureEndpoints                     obj/HIDClassDevice.o
+HID_Device_ProcessControlRequest                  obj/HIDClassDevice.o
+HID_Device_USBTask                                obj/HIDClassDevice.o
+LanguageString                                    obj/Descriptors.o
+MIDI_Device_ConfigureEndpoints                    obj/MIDIClassDevice.o
+MIDI_Device_Flush                                 obj/MIDIClassDevice.o
+MIDI_Device_ReceiveEventPacket                    obj/MIDIClassDevice.o
+MIDI_Device_SendEventPacket                       obj/MIDIClassDevice.o
+MIDI_Device_USBTask                               obj/MIDIClassDevice.o
+MS_Device_ConfigureEndpoints                      obj/MassStorageClassDevice.o
+MS_Device_ProcessControlRequest                   obj/MassStorageClassDevice.o
+MS_Device_USBTask                                 obj/MassStorageClassDevice.o
+ManufacturerString                                obj/Descriptors.o
+PORT_DE                                           obj/serial.o
+PORT_RE                                           obj/serial.o
+PRNT_Device_BytesReceived                         obj/PrinterClassDevice.o
+PRNT_Device_ConfigureEndpoints                    obj/PrinterClassDevice.o
+PRNT_Device_CreateBlockingStream                  obj/PrinterClassDevice.o
+PRNT_Device_CreateStream                          obj/PrinterClassDevice.o
+PRNT_Device_Event_Stub                            obj/PrinterClassDevice.o
+PRNT_Device_Flush                                 obj/PrinterClassDevice.o
+PRNT_Device_ProcessControlRequest                 obj/PrinterClassDevice.o
+PRNT_Device_ReceiveByte                           obj/PrinterClassDevice.o
+PRNT_Device_SendByte                              obj/PrinterClassDevice.o
+PRNT_Device_SendData                              obj/PrinterClassDevice.o
+PRNT_Device_SendString                            obj/PrinterClassDevice.o
+PRNT_Device_USBTask                               obj/PrinterClassDevice.o
+ProductString                                     obj/Descriptors.o
+RNDIS_Device_ConfigureEndpoints                   obj/RNDISClassDevice.o
+RNDIS_Device_IsPacketReceived                     obj/RNDISClassDevice.o
+RNDIS_Device_ProcessControlRequest                obj/RNDISClassDevice.o
+RNDIS_Device_ReadPacket                           obj/RNDISClassDevice.o
+RNDIS_Device_SendPacket                           obj/RNDISClassDevice.o
+RNDIS_Device_USBTask                              obj/RNDISClassDevice.o
+SetupHardware                                     obj/VirtualSerial.o
+USB_ControlRequest                                obj/USBTask.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/MassStorageClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/CCIDClassDevice.o
+                                                  obj/AudioClassDevice.o
+                                                  obj/DeviceStandardReq.o
+                                                  obj/Endpoint_AVR8.o
+                                                  obj/EndpointStream_AVR8.o
+USB_DeviceState                                   obj/USBTask.o
+                                                  obj/RNDISClassDevice.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/MIDIClassDevice.o
+                                                  obj/MassStorageClassDevice.o
+                                                  obj/HIDClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/DeviceStandardReq.o
+                                                  obj/USBInterrupt_AVR8.o
+                                                  obj/USBController_AVR8.o
+                                                  obj/Endpoint_AVR8.o
+                                                  obj/EndpointStream_AVR8.o
+USB_Device_ConfigurationNumber                    obj/DeviceStandardReq.o
+                                                  obj/USBInterrupt_AVR8.o
+                                                  obj/USBController_AVR8.o
+USB_Device_CurrentlySelfPowered                   obj/DeviceStandardReq.o
+                                                  obj/USBController_AVR8.o
+USB_Device_ProcessControlRequest                  obj/DeviceStandardReq.o
+                                                  obj/USBTask.o
+                                                  obj/USBInterrupt_AVR8.o
+USB_Device_RemoteWakeupEnabled                    obj/DeviceStandardReq.o
+                                                  obj/USBController_AVR8.o
+USB_Device_SendRemoteWakeup                       obj/Device_AVR8.o
+USB_Disable                                       obj/USBController_AVR8.o
+USB_Event_Stub                                    obj/Events.o
+USB_Event_Stub_2                                  obj/Events.o
+USB_Event_Stub_3                                  obj/Events.o
+USB_GetHIDReportItemInfo                          obj/HIDParser.o
+USB_GetHIDReportSize                              obj/HIDParser.o
+USB_GetNextDescriptorComp                         obj/ConfigDescriptors.o
+USB_GetNextDescriptorOfType                       obj/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeAfter                  obj/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeBefore                 obj/ConfigDescriptors.o
+USB_INT_ClearAllInterrupts                        obj/USBInterrupt_AVR8.o
+                                                  obj/USBController_AVR8.o
+USB_INT_DisableAllInterrupts                      obj/USBInterrupt_AVR8.o
+                                                  obj/USBController_AVR8.o
+USB_Init                                          obj/USBController_AVR8.o
+                                                  obj/VirtualSerial.o
+USB_IsInitialized                                 obj/USBTask.o
+                                                  obj/USBController_AVR8.o
+USB_ProcessHIDReport                              obj/HIDParser.o
+USB_ReadHost                                      obj/VirtualSerial.o
+USB_ResetInterface                                obj/USBController_AVR8.o
+USB_SendHost                                      obj/VirtualSerial.o
+USB_SendHost_byte                                 obj/VirtualSerial.o
+USB_SetHIDReportItemInfo                          obj/HIDParser.o
+USB_USBTask                                       obj/USBTask.o
+                                                  obj/PrinterClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/VirtualSerial.o
+USB_packet_parser                                 obj/VirtualSerial.o
+VirtualSerial_CDC_Interface                       obj/VirtualSerial.o
+__DATA_REGION_LENGTH__                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__DATA_REGION_ORIGIN__                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__EEPROM_REGION_LENGTH__                          /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__FUSE_REGION_LENGTH__                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__TEXT_REGION_LENGTH__                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__bad_interrupt                                   /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__bss_end                                         /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+                                                  obj/USBTask.o
+                                                  obj/DeviceStandardReq.o
+                                                  obj/VirtualSerial.o
+__do_copy_data                                    /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+                                                  obj/RNDISClassDevice.o
+                                                  obj/CDCClassDevice.o
+                                                  obj/constants.o
+                                                  obj/serial.o
+                                                  obj/VirtualSerial.o
+__epilogue_restores__                             /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+__heap_end                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__init                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__iob                                             /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(iob.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+                                                  obj/VirtualSerial.o
+__prologue_saves__                                /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+__stack                                           /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__strlen_P                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strlen_P.o)
+                                                  obj/CDCClassDevice.o
+__ultoa_invert                                    /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+__vector_1                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_10                                       obj/USBInterrupt_AVR8.o
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_11                                       obj/USBInterrupt_AVR8.o
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_12                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_13                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_14                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_15                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_16                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_17                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_18                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_19                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_2                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_20                                       obj/VirtualSerial.o
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_21                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_22                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_23                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_24                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_25                                       obj/VirtualSerial.o
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_26                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_27                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_28                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_29                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_3                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_30                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_31                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_32                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_33                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_34                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_35                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_36                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_37                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_38                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_39                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_4                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_40                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_41                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_42                                       /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_5                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_6                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_7                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_8                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_9                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vector_default                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+__vectors                                         /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+_exit                                             /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ajust_pins_hex2int                                obj/VirtualSerial.o
+buf                                               obj/VirtualSerial.o
+config_timer1_overflow                            obj/VirtualSerial.o
+configure_leds_output                             obj/leds.o
+                                                  obj/VirtualSerial.o
+configure_modbus_output_pins                      obj/serial.o
+                                                  obj/VirtualSerial.o
+configure_modbus_receive_mode                     obj/serial.o
+                                                  obj/VirtualSerial.o
+configure_modbus_transmitter_mode                 obj/serial.o
+                                                  obj/VirtualSerial.o
+crc16_compute                                     obj/serial.o
+                                                  obj/VirtualSerial.o
+crc16_update                                      obj/serial.o
+                                                  obj/VirtualSerial.o
+crc_calc                                          obj/VirtualSerial.o
+crc_recv                                          obj/VirtualSerial.o
+disable_timer1                                    obj/VirtualSerial.o
+eeprom_read2buffer                                obj/disk.o
+                                                  obj/VirtualSerial.o
+eeprom_read_block                                 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+                                                  obj/disk.o
+eeprom_read_blraw                                 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+eeprom_read_byte                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+                                                  obj/EndpointStream_AVR8.o
+                                                  obj/disk.o
+eeprom_read_id                                    obj/disk.o
+                                                  obj/VirtualSerial.o
+eeprom_update_byte                                /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+                                                  obj/EndpointStream_AVR8.o
+eeprom_update_r18                                 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+exit                                              /usr/lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+expected_len                                      obj/VirtualSerial.o
+extract_wl_from_buffer                            obj/VirtualSerial.o
+fill_field_wavelength_matriz                      obj/wl.o
+                                                  obj/VirtualSerial.o
+fill_init_wl_response                             obj/VirtualSerial.o
+flag_4s                                           obj/VirtualSerial.o
+fputc                                             /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+                                                  obj/VirtualSerial.o
+get_num_slaves_by_wavelength                      obj/wl.o
+                                                  obj/VirtualSerial.o
+handler_master_wl                                 obj/VirtualSerial.o
+handler_slave_response                            obj/VirtualSerial.o
+hex2int                                           obj/VirtualSerial.o
+idx                                               obj/VirtualSerial.o
+init_timer1                                       obj/VirtualSerial.o
+init_wavelength_matrix                            obj/wl.o
+                                                  obj/VirtualSerial.o
+is_ack                                            obj/VirtualSerial.o
+is_nack                                           obj/VirtualSerial.o
+main                                              obj/VirtualSerial.o
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/crtatmega32u4.o
+memcmp                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                                                  obj/HIDClassDevice.o
+memcpy                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  obj/RNDISClassDevice.o
+                                                  obj/HIDClassDevice.o
+memcpy_P                                          /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                                  obj/RNDISClassDevice.o
+memset                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(memset.o)
+                                                  obj/HIDClassDevice.o
+mount_request_slave                               obj/VirtualSerial.o
+next_append                                       obj/VirtualSerial.o
+port_to_ddr                                       obj/constants.o
+                                                  obj/leds.o
+                                                  obj/serial.o
+port_to_port                                      obj/constants.o
+                                                  obj/leds.o
+                                                  obj/serial.o
+print_wavelength_matrix                           obj/VirtualSerial.o
+printf                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+                                                  obj/VirtualSerial.o
+putchar                                           /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(putchar.o)
+                                                  obj/VirtualSerial.o
+puts                                              /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(puts.o)
+                                                  obj/VirtualSerial.o
+requested_cmd                                     obj/VirtualSerial.o
+requested_len_max                                 obj/VirtualSerial.o
+requested_slave                                   obj/VirtualSerial.o
+search_wavelenth                                  obj/wl.o
+                                                  obj/VirtualSerial.o
+set_led_state                                     obj/leds.o
+                                                  obj/VirtualSerial.o
+set_leds_all_off                                  obj/leds.o
+                                                  obj/VirtualSerial.o
+state                                             obj/VirtualSerial.o
+strnlen                                           /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strnlen_P                                         /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+usart_flush                                       obj/serial.o
+                                                  obj/VirtualSerial.o
+usart_init                                        obj/serial.o
+                                                  obj/VirtualSerial.o
+usart_send_buffer                                 obj/serial.o
+                                                  obj/VirtualSerial.o
+usart_send_byte                                   obj/serial.o
+usart_send_uint16                                 obj/serial.o
+usb_in_buffer                                     obj/VirtualSerial.o
+valid_packet                                      obj/VirtualSerial.o
+vfprintf                                          /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr5/libc.a(printf.o)
+wl_init_host_response                             obj/VirtualSerial.o
+wl_list                                           obj/VirtualSerial.o
+wl_master                                         obj/VirtualSerial.o

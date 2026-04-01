@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['midi_5fdevice_5fconfigureendpoints_0',['MIDI_Device_ConfigureEndpoints',['../group___group___u_s_b_class_m_i_d_i_device.html#gaaaab261bfeac3a6011470094ef973077',1,'MIDIClassDevice.h']]],
+  ['midi_5fdevice_5fflush_1',['MIDI_Device_Flush',['../group___group___u_s_b_class_m_i_d_i_device.html#ga07e3780fa3b4d301064fdacee18e7462',1,'MIDIClassDevice.h']]],
+  ['midi_5fdevice_5fprocesscontrolrequest_2',['MIDI_Device_ProcessControlRequest',['../group___group___u_s_b_class_m_i_d_i_device.html#gaf9da8f1deb98d1d1fec292b61e9c3a07',1,'MIDIClassDevice.h']]],
+  ['midi_5fdevice_5freceiveeventpacket_3',['MIDI_Device_ReceiveEventPacket',['../group___group___u_s_b_class_m_i_d_i_device.html#gacae5c75ec783851445048924d65abe66',1,'MIDIClassDevice.h']]],
+  ['midi_5fdevice_5fsendeventpacket_4',['MIDI_Device_SendEventPacket',['../group___group___u_s_b_class_m_i_d_i_device.html#ga73ec171ad6e2baaeb2bd8d29877f4dce',1,'MIDIClassDevice.h']]],
+  ['midi_5fdevice_5fusbtask_5',['MIDI_Device_USBTask',['../group___group___u_s_b_class_m_i_d_i_device.html#ga689886e6b43ca19ce28c56bcae7933cf',1,'MIDIClassDevice.h']]],
+  ['midi_5fhost_5fconfigurepipes_6',['MIDI_Host_ConfigurePipes',['../group___group___u_s_b_class_m_i_d_i_host.html#gabd066fe8e1acf1bd1120b38691aaa114',1,'MIDIClassHost.h']]],
+  ['midi_5fhost_5fflush_7',['MIDI_Host_Flush',['../group___group___u_s_b_class_m_i_d_i_host.html#gab6b8407dfc0cb622441f741f0ad38f2f',1,'MIDIClassHost.h']]],
+  ['midi_5fhost_5freceiveeventpacket_8',['MIDI_Host_ReceiveEventPacket',['../group___group___u_s_b_class_m_i_d_i_host.html#ga3fa2c7dc65e4c56bd2e2f5963158a499',1,'MIDIClassHost.h']]],
+  ['midi_5fhost_5fsendeventpacket_9',['MIDI_Host_SendEventPacket',['../group___group___u_s_b_class_m_i_d_i_host.html#ga1da36cd16cde4b3c240260872b0ec0cb',1,'MIDIClassHost.h']]],
+  ['midi_5fhost_5fusbtask_10',['MIDI_Host_USBTask',['../group___group___u_s_b_class_m_i_d_i_host.html#ga4e4297dbc1d5af053eab8b3498783537',1,'MIDIClassHost.h']]],
+  ['ms_5fdevice_5fconfigureendpoints_11',['MS_Device_ConfigureEndpoints',['../group___group___u_s_b_class_m_s_device.html#ga06ce84f7268498b352bc371f95aaf3e7',1,'MassStorageClassDevice.h']]],
+  ['ms_5fdevice_5fprocesscontrolrequest_12',['MS_Device_ProcessControlRequest',['../group___group___u_s_b_class_m_s_device.html#gafbc6ca6a7946cd48abc1bc71b81cf639',1,'MassStorageClassDevice.h']]],
+  ['ms_5fdevice_5fusbtask_13',['MS_Device_USBTask',['../group___group___u_s_b_class_m_s_device.html#gafb03fb4a0afe77ad7c5943c82bd4d5db',1,'MassStorageClassDevice.h']]],
+  ['ms_5fhost_5fconfigurepipes_14',['MS_Host_ConfigurePipes',['../group___group___u_s_b_class_mass_storage_host.html#gae8022f5fe04b8bb9a16a61b5f2ff007e',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5fgetinquirydata_15',['MS_Host_GetInquiryData',['../group___group___u_s_b_class_mass_storage_host.html#ga29da558e8dfcae620be06e4285972018',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5fgetmaxlun_16',['MS_Host_GetMaxLUN',['../group___group___u_s_b_class_mass_storage_host.html#ga59b02e78d0128b2257ac202fe17cb6b2',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5fpreventallowmediumremoval_17',['MS_Host_PreventAllowMediumRemoval',['../group___group___u_s_b_class_mass_storage_host.html#gaa8d0a461e5461d4119e6f4f25dafee9a',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5freaddeviceblocks_18',['MS_Host_ReadDeviceBlocks',['../group___group___u_s_b_class_mass_storage_host.html#gabcc282587ee878029ce23ca2fda91933',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5freaddevicecapacity_19',['MS_Host_ReadDeviceCapacity',['../group___group___u_s_b_class_mass_storage_host.html#gaa34e28ea71b4ae7cc4cbd4cd383da3d9',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5frequestsense_20',['MS_Host_RequestSense',['../group___group___u_s_b_class_mass_storage_host.html#ga4167d0ad3e327c3f9925099d79531a26',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5fresetmsinterface_21',['MS_Host_ResetMSInterface',['../group___group___u_s_b_class_mass_storage_host.html#ga505423d27297e0b8e8f94c503724d481',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5ftestunitready_22',['MS_Host_TestUnitReady',['../group___group___u_s_b_class_mass_storage_host.html#ga6b7c68eb61907e7314ac96695562f279',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5fusbtask_23',['MS_Host_USBTask',['../group___group___u_s_b_class_mass_storage_host.html#ga723c9c545b5672974c4dcfd664e23b2c',1,'MassStorageClassHost.h']]],
+  ['ms_5fhost_5fwritedeviceblocks_24',['MS_Host_WriteDeviceBlocks',['../group___group___u_s_b_class_mass_storage_host.html#ga6a814c24106eecc7c907468a146d5366',1,'MassStorageClassHost.h']]]
+];

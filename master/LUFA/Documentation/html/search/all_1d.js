@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['x_0',['X',['../struct_u_s_b___mouse_report___data__t.html#a0f5f23c127f4335288a9f4d897e64a67',1,'USB_MouseReport_Data_t']]],
+  ['xmega_1',['xmega',['../group___group___device___x_m_e_g_a.html',1,'Device Management (XMEGA)'],['../group___group___endpoint_r_w___x_m_e_g_a.html',1,'Endpoint Data Reading and Writing (XMEGA)'],['../group___group___endpoint_management___x_m_e_g_a.html',1,'Endpoint Management (XMEGA)'],['../group___group___endpoint_packet_management___x_m_e_g_a.html',1,'Endpoint Packet Management (XMEGA)'],['../group___group___serial_s_p_i___x_m_e_g_a.html',1,'Master SPI Mode Serial USART Peripheral Driver (XMEGA)'],['../group___group___endpoint_stream_r_w___x_m_e_g_a.html',1,'Read/Write of Multi-Byte Streams (XMEGA)'],['../group___group___endpoint_primitive_r_w___x_m_e_g_a.html',1,'Read/Write of Primitive Data Types (XMEGA)'],['../group___group___serial___x_m_e_g_a.html',1,'Serial USART Peripheral Driver (XMEGA)'],['../group___group___s_p_i___x_m_e_g_a.html',1,'SPI Peripheral Driver (XMEGA)'],['../group___group___t_w_i___x_m_e_g_a.html',1,'TWI Peripheral Driver (XMEGA)'],['../group___group___u_s_b_management___x_m_e_g_a.html',1,'USB Interface Management (XMEGA)'],['../group___group___platform_drivers___x_m_e_g_a.html',1,'XMEGA']]],
+  ['xmega_20avr_20xmega_2',['Atmel USB XMEGA AVR (XMEGA)',['../_page__x_m_e_g_a_support.html',1,'Page_DeviceSupport']]],
+  ['xmega_20clockmanagement_20h_3',['Clock Management Driver - LUFA/Platform/XMEGA/ClockManagement.h',['../group___group___platform_drivers___x_m_e_g_a_clocks.html',1,'']]],
+  ['xmega_5fextern_5fosc_5fclockfrequency_5ft_4',['XMEGA_Extern_OSC_ClockFrequency_t',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga9a5968f7929f1d842534af81cd8216fe',1,'ClockManagement.h']]],
+  ['xmega_5fextern_5fosc_5fclockstartup_5ft_5',['XMEGA_Extern_OSC_ClockStartup_t',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga1325e25ff328368b2311b901bcd16006',1,'ClockManagement.h']]],
+  ['xmega_5fsystem_5fclocksource_5ft_6',['XMEGA_System_ClockSource_t',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga8ce58d1b408682bcdec9b7ffcfabdd3a',1,'ClockManagement.h']]],
+  ['xmega_5fsystem_5fdfllreference_5ft_7',['XMEGA_System_DFLLReference_t',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#gaec7961c9cada2553a2984951f9c06876',1,'ClockManagement.h']]],
+  ['xmegaclk_5fccp_5fwrite_8',['XMEGACLK_CCP_Write',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#gaaf85958e5108c1b23926293334e55b5f',1,'ClockManagement.h']]],
+  ['xmegaclk_5fsetcpuclocksource_9',['XMEGACLK_SetCPUClockSource',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga495149c7736326aecf853348742b7a23',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstartdfll_10',['XMEGACLK_StartDFLL',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#gaed609c49b45383a8c59b4b4e3aa199b4',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstartexternaloscillator_11',['XMEGACLK_StartExternalOscillator',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga100901a4b6c79a00492a8d8e785cd366',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstartinternaloscillator_12',['XMEGACLK_StartInternalOscillator',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga16eb245cd3062f770a6dd9145f446947',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstartpll_13',['XMEGACLK_StartPLL',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga8276607d5313a131d72f4991118f2638',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstopdfll_14',['XMEGACLK_StopDFLL',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga63f1d06a7afd0d91af1214c4965ab4f3',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstopexternaloscillator_15',['XMEGACLK_StopExternalOscillator',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga19bda3469d1cb748ef7098f4cebf1591',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstopinternaloscillator_16',['XMEGACLK_StopInternalOscillator',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga7978a384f14f6db2cfdbe4ccea5d33df',1,'ClockManagement.h']]],
+  ['xmegaclk_5fstoppll_17',['XMEGACLK_StopPLL',['../group___group___platform_drivers___x_m_e_g_a_clocks.html#ga8a734a31a9a27f1e8f92d08e64d07efc',1,'ClockManagement.h']]],
+  ['xmegaexperimentalinfo_2etxt_18',['XMEGAExperimentalInfo.txt',['../_x_m_e_g_a_experimental_info_8txt.html',1,'']]],
+  ['xplain_19',['xplain',['../group___group___dataflash___x_p_l_a_i_n.html',1,'XPLAIN'],['../group___group___l_e_ds___x_p_l_a_i_n.html',1,'XPLAIN'],['../group___group___board_info___x_p_l_a_i_n.html',1,'XPLAIN']]],
+  ['xplain_5frev1_20',['xplain_rev1',['../group___group___board_info___x_p_l_a_i_n___r_e_v1.html',1,'XPLAIN_REV1'],['../group___group___dataflash___x_p_l_a_i_n___r_e_v1.html',1,'XPLAIN_REV1'],['../group___group___l_e_ds___x_p_l_a_i_n___r_e_v1.html',1,'XPLAIN_REV1']]],
+  ['xplained_5fmini_21',['xplained_mini',['../group___group___l_e_ds___x_p_l_a_i_n_e_d___m_i_n_i.html',1,'XPLAINED_MINI'],['../group___group___board_info___x_p_l_a_i_n_e_d___m_i_n_i.html',1,'XPLAINED_MINI']]],
+  ['xxxxxx_22',['xxxxxx',['../_page__change_log.html#Sec_ChangeLogXXXXXX',1,'Version XXXXXX'],['../_page__known_issues.html#Sec_KnownIssuesXXXXXX',1,'Version XXXXXX'],['../_page__migration.html#Sec_MigrationXXXXXX',1,'Version XXXXXX']]]
+];

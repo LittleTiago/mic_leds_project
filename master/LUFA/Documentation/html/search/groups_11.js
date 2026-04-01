@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['read_20write_20of_20multi_20byte_20streams_0',['read write of multi byte streams',['../group___group___pipe_stream_r_w.html',1,'Read/Write of Multi-Byte Streams'],['../group___group___endpoint_stream_r_w.html',1,'Read/Write of Multi-Byte Streams']]],
+  ['read_20write_20of_20multi_20byte_20streams_20avr8_1',['read write of multi byte streams avr8',['../group___group___pipe_stream_r_w___a_v_r8.html',1,'Read/Write of Multi-Byte Streams (AVR8)'],['../group___group___endpoint_stream_r_w___a_v_r8.html',1,'Read/Write of Multi-Byte Streams (AVR8)']]],
+  ['read_20write_20of_20multi_20byte_20streams_20uc3_2',['read write of multi byte streams uc3',['../group___group___endpoint_stream_r_w___u_c3.html',1,'Read/Write of Multi-Byte Streams (UC3)'],['../group___group___pipe_stream_r_w___u_c3.html',1,'Read/Write of Multi-Byte Streams (UC3)']]],
+  ['read_20write_20of_20multi_20byte_20streams_20xmega_3',['Read/Write of Multi-Byte Streams (XMEGA)',['../group___group___endpoint_stream_r_w___x_m_e_g_a.html',1,'']]],
+  ['read_20write_20of_20primitive_20data_20types_4',['read write of primitive data types',['../group___group___endpoint_primitive_r_w.html',1,'Read/Write of Primitive Data Types'],['../group___group___pipe_primitive_r_w.html',1,'Read/Write of Primitive Data Types']]],
+  ['read_20write_20of_20primitive_20data_20types_20avr8_5',['read write of primitive data types avr8',['../group___group___endpoint_primitive_r_w___a_v_r8.html',1,'Read/Write of Primitive Data Types (AVR8)'],['../group___group___pipe_primitive_r_w___a_v_r8.html',1,'Read/Write of Primitive Data Types (AVR8)']]],
+  ['read_20write_20of_20primitive_20data_20types_20uc3_6',['read write of primitive data types uc3',['../group___group___endpoint_primitive_r_w___u_c3.html',1,'Read/Write of Primitive Data Types (UC3)'],['../group___group___pipe_primitive_r_w___u_c3.html',1,'Read/Write of Primitive Data Types (UC3)']]],
+  ['read_20write_20of_20primitive_20data_20types_20xmega_7',['Read/Write of Primitive Data Types (XMEGA)',['../group___group___endpoint_primitive_r_w___x_m_e_g_a.html',1,'']]],
+  ['reading_20and_20writing_8',['reading and writing',['../group___group___endpoint_r_w.html',1,'Endpoint Data Reading and Writing'],['../group___group___pipe_r_w.html',1,'Pipe Data Reading and Writing']]],
+  ['reading_20and_20writing_20avr8_9',['reading and writing avr8',['../group___group___endpoint_r_w___a_v_r8.html',1,'Endpoint Data Reading and Writing (AVR8)'],['../group___group___pipe_r_w___a_v_r8.html',1,'Pipe Data Reading and Writing (AVR8)']]],
+  ['reading_20and_20writing_20uc3_10',['reading and writing uc3',['../group___group___endpoint_r_w___u_c3.html',1,'Endpoint Data Reading and Writing (UC3)'],['../group___group___pipe_r_w___u_c3.html',1,'Pipe Data Reading and Writing (UC3)']]],
+  ['reading_20and_20writing_20xmega_11',['Endpoint Data Reading and Writing (XMEGA)',['../group___group___endpoint_r_w___x_m_e_g_a.html',1,'']]],
+  ['reordering_12',['Byte Reordering',['../group___group___byte_swapping.html',1,'']]],
+  ['report_20descriptor_20item_20constants_13',['HID Report Descriptor Item Constants',['../group___group___h_i_d_report_item_const.html',1,'']]],
+  ['report_20parser_14',['HID Report Parser',['../group___group___h_i_d_parser.html',1,'']]],
+  ['request_20management_15',['Pipe Control Request Management',['../group___group___pipe_control_req.html',1,'']]],
+  ['request_20management_20avr8_16',['Pipe Control Request Management (AVR8)',['../group___group___pipe_control_req___a_v_r8.html',1,'']]],
+  ['request_20management_20uc3_17',['Pipe Control Request Management (UC3)',['../group___group___pipe_control_req___u_c3.html',1,'']]],
+  ['requests_18',['Standard USB Requests',['../group___group___std_request.html',1,'']]],
+  ['ring_20buffer_20lufa_20drivers_20misc_20ringbuffer_20h_19',['Generic Byte Ring Buffer - LUFA/Drivers/Misc/RingBuffer.h',['../group___group___ring_buff.html',1,'']]],
+  ['ringbuffer_20h_20',['Generic Byte Ring Buffer - LUFA/Drivers/Misc/RingBuffer.h',['../group___group___ring_buff.html',1,'']]],
+  ['rndis_20class_20device_20mode_20driver_21',['RNDIS Class Device Mode Driver',['../group___group___u_s_b_class_r_n_d_i_s_device.html',1,'']]],
+  ['rndis_20class_20host_20mode_20driver_22',['RNDIS Class Host Mode Driver',['../group___group___u_s_b_class_r_n_d_i_s_host.html',1,'']]],
+  ['rndis_20networking_20class_20driver_23',['RNDIS (Networking) Class Driver',['../group___group___u_s_b_class_r_n_d_i_s.html',1,'']]],
+  ['rzusbstick_24',['rzusbstick',['../group___group___l_e_ds___r_z_u_s_b_s_t_i_c_k.html',1,'RZUSBSTICK'],['../group___group___board_info___r_z_u_s_b_s_t_i_c_k.html',1,'RZUSBSTICK']]]
+];

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['b1_5fxplained_0',['b1_xplained',['../group___group___dataflash___b1___x_p_l_a_i_n_e_d.html',1,'B1_XPLAINED'],['../group___group___buttons___b1___x_p_l_a_i_n_e_d.html',1,'B1_XPLAINED'],['../group___group___board_info___b1___x_p_l_a_i_n_e_d.html',1,'B1_XPLAINED'],['../group___group___l_e_ds___b1___x_p_l_a_i_n_e_d.html',1,'B1_XPLAINED']]],
+  ['benito_1',['benito',['../group___group___l_e_ds___b_e_n_i_t_o.html',1,'BENITO'],['../group___group___buttons___b_e_n_i_t_o.html',1,'BENITO'],['../group___group___board_info___b_e_n_i_t_o.html',1,'BENITO']]],
+  ['bigmultio_2',['bigmultio',['../group___group___l_e_ds___b_i_g_m_u_l_t_i_o.html',1,'BIGMULTIO'],['../group___group___board_info___b_i_g_m_u_l_t_i_o.html',1,'BIGMULTIO']]],
+  ['blackcat_3',['blackcat',['../group___group___board_info___b_l_a_c_k_c_a_t.html',1,'BLACKCAT'],['../group___group___l_e_ds___b_l_a_c_k_c_a_t.html',1,'BLACKCAT']]],
+  ['board_20buttons_20h_4',['Buttons Driver - LUFA/Drivers/Board/Buttons.h',['../group___group___buttons.html',1,'']]],
+  ['board_20dataflash_20h_5',['Dataflash Driver - LUFA/Drivers/Board/Dataflash.h',['../group___group___dataflash.html',1,'']]],
+  ['board_20drivers_6',['Board Drivers',['../group___group___board_drivers.html',1,'']]],
+  ['board_20information_20driver_20lufa_20drivers_20board_20board_20h_7',['Board Information Driver - LUFA/Drivers/Board/Board.h',['../group___group___board_info.html',1,'']]],
+  ['board_20joystick_20h_8',['Joystick Driver - LUFA/Drivers/Board/Joystick.h',['../group___group___joystick.html',1,'']]],
+  ['board_20leds_20h_9',['LEDs Driver - LUFA/Drivers/Board/LEDs.h',['../group___group___l_e_ds.html',1,'']]],
+  ['board_20temperature_20h_10',['Temperature Sensor Driver - LUFA/Drivers/Board/Temperature.h',['../group___group___temperature.html',1,'']]],
+  ['board_20types_11',['Board Types',['../group___group___board_types.html',1,'']]],
+  ['buffer_20lufa_20drivers_20misc_20ringbuffer_20h_12',['Generic Byte Ring Buffer - LUFA/Drivers/Misc/RingBuffer.h',['../group___group___ring_buff.html',1,'']]],
+  ['bui_13',['bui',['../group___group___l_e_ds___b_u_i.html',1,'BUI'],['../group___group___board_info___b_u_i.html',1,'BUI']]],
+  ['bumbleb_14',['bumbleb',['../group___group___l_e_ds___b_u_m_b_l_e_b.html',1,'BUMBLEB'],['../group___group___buttons___b_u_m_b_l_e_b.html',1,'BUMBLEB'],['../group___group___joystick___b_u_m_b_l_e_b.html',1,'BUMBLEB'],['../group___group___board_info___b_u_m_b_l_e_b.html',1,'BUMBLEB']]],
+  ['buttons_20driver_20lufa_20drivers_20board_20buttons_20h_15',['Buttons Driver - LUFA/Drivers/Board/Buttons.h',['../group___group___buttons.html',1,'']]],
+  ['byte_20ordering_16',['Endianness and Byte Ordering',['../group___group___endianness.html',1,'']]],
+  ['byte_20reordering_17',['Byte Reordering',['../group___group___byte_swapping.html',1,'']]],
+  ['byte_20ring_20buffer_20lufa_20drivers_20misc_20ringbuffer_20h_18',['Generic Byte Ring Buffer - LUFA/Drivers/Misc/RingBuffer.h',['../group___group___ring_buff.html',1,'']]],
+  ['byte_20streams_19',['byte streams',['../group___group___endpoint_stream_r_w.html',1,'Read/Write of Multi-Byte Streams'],['../group___group___pipe_stream_r_w.html',1,'Read/Write of Multi-Byte Streams']]],
+  ['byte_20streams_20avr8_20',['byte streams avr8',['../group___group___endpoint_stream_r_w___a_v_r8.html',1,'Read/Write of Multi-Byte Streams (AVR8)'],['../group___group___pipe_stream_r_w___a_v_r8.html',1,'Read/Write of Multi-Byte Streams (AVR8)']]],
+  ['byte_20streams_20uc3_21',['byte streams uc3',['../group___group___pipe_stream_r_w___u_c3.html',1,'Read/Write of Multi-Byte Streams (UC3)'],['../group___group___endpoint_stream_r_w___u_c3.html',1,'Read/Write of Multi-Byte Streams (UC3)']]],
+  ['byte_20streams_20xmega_22',['Read/Write of Multi-Byte Streams (XMEGA)',['../group___group___endpoint_stream_r_w___x_m_e_g_a.html',1,'']]]
+];
